@@ -1,0 +1,12 @@
+flask>=2.3.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+deepface>=0.0.90
+transformers>=4.35.0
+torch>=2.0.0
+requests>=2.31.0
+surya-ocr>=0.4.0
+sentence-transformers>=2.2.0
+pyzbar>=0.1.9
+easyocr>=1.7.0

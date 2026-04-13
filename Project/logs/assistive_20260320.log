@@ -1,0 +1,1173 @@
+[16:04:12] INFO — ==================================================
+[16:04:12] INFO —   WARMING UP ALL MODELS...
+[16:04:12] INFO — ==================================================
+[16:04:12] INFO — Loading BLIP model...
+[16:04:12] INFO — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[16:04:12] INFO — [33mPress CTRL+C to quit[0m
+[16:04:12] INFO —  * Restarting with stat
+[16:04:13] INFO — ==================================================
+[16:04:13] INFO —   WARMING UP ALL MODELS...
+[16:04:13] INFO — ==================================================
+[16:04:13] INFO — Loading BLIP model...
+[16:04:13] WARNING —  * Debugger is active!
+[16:04:13] INFO —  * Debugger PIN: 863-714-109
+[16:04:21] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[16:04:21] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[16:04:22] DEBUG — Creating converter from 7 to 5
+[16:04:22] DEBUG — Creating converter from 5 to 7
+[16:04:22] DEBUG — Creating converter from 7 to 5
+[16:04:22] DEBUG — Creating converter from 5 to 7
+[16:04:22] DEBUG — Creating converter from 7 to 5
+[16:04:22] DEBUG — Creating converter from 5 to 7
+[16:04:24] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[16:04:24] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[16:04:24] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[16:04:24] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[16:04:24] DEBUG — interactive is False
+[16:04:24] DEBUG — platform is win32
+[16:04:24] DEBUG — interactive is False
+[16:04:24] DEBUG — platform is win32
+[16:04:24] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[16:04:24] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[16:04:24] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[16:04:24] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[16:04:26] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:04:26] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:04:26] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[16:04:26] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[16:04:26] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[16:04:26] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[16:04:27] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:04:27] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:04:27] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:04:27] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+[16:04:27] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+[16:04:28] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[16:04:28] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[16:04:28] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[16:04:28] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/audio_tokenizer_config.json HTTP/1.1" 404 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[16:04:29] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[16:04:29] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:04:29] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[16:04:30] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[16:04:30] INFO — Loading sentence-transformers...
+[16:04:30] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[16:04:31] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[16:04:31] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[16:04:31] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[16:04:31] INFO — Loading sentence-transformers...
+[16:04:31] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[16:04:31] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[16:05:10] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:10] "GET / HTTP/1.1" 200 -
+[16:05:10] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:10] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:05:11] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:11] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:14] DEBUG — Starting new HTTPS connection (1): api.open-meteo.com:443
+[16:05:14] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:14] "GET /faces HTTP/1.1" 200 -
+[16:05:16] DEBUG — https://api.open-meteo.com:443 "GET /v1/forecast?latitude=13.0827&longitude=80.2707&current=temperature_2m&current=weathercode&current=windspeed_10m&current=precipitation&timezone=auto HTTP/1.1" 200 None
+[16:05:16] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:16] "GET /startup_info HTTP/1.1" 200 -
+[16:05:28] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:28] "GET / HTTP/1.1" 200 -
+[16:05:28] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:28] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:05:28] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:28] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:28] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:28] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:35] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:35] "GET /startup_info HTTP/1.1" 200 -
+[16:05:35] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:35] "GET /faces HTTP/1.1" 200 -
+[16:05:49] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:49] "GET / HTTP/1.1" 200 -
+[16:05:49] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:49] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:49] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:49] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:05:50] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:50] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:05:51] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:51] "GET /startup_info HTTP/1.1" 200 -
+[16:05:51] INFO — 127.0.0.1 - - [20/Mar/2026 16:05:51] "GET /faces HTTP/1.1" 200 -
+[16:07:05] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:05] "GET / HTTP/1.1" 200 -
+[16:07:05] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:05] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:07:06] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:07:06] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:07:07] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:07] "GET /startup_info HTTP/1.1" 200 -
+[16:07:07] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:07] "GET /faces HTTP/1.1" 200 -
+[16:07:30] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:30] "GET / HTTP/1.1" 200 -
+[16:07:30] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:30] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:07:31] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:31] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:07:34] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:34] "GET /startup_info HTTP/1.1" 200 -
+[16:07:34] INFO — 127.0.0.1 - - [20/Mar/2026 16:07:34] "GET /faces HTTP/1.1" 200 -
+[16:09:31] INFO — ==================================================
+[16:09:31] INFO —   WARMING UP ALL MODELS...
+[16:09:31] INFO — ==================================================
+[16:09:31] INFO — Loading BLIP model...
+[16:09:31] INFO — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[16:09:31] INFO — [33mPress CTRL+C to quit[0m
+[16:09:31] INFO —  * Restarting with stat
+[16:09:32] INFO — ==================================================
+[16:09:32] INFO —   WARMING UP ALL MODELS...
+[16:09:32] INFO — ==================================================
+[16:09:32] INFO — Loading BLIP model...
+[16:09:32] WARNING —  * Debugger is active!
+[16:09:32] INFO —  * Debugger PIN: 863-714-109
+[16:09:38] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[16:09:38] DEBUG — Creating converter from 7 to 5
+[16:09:38] DEBUG — Creating converter from 5 to 7
+[16:09:38] DEBUG — Creating converter from 7 to 5
+[16:09:38] DEBUG — Creating converter from 5 to 7
+[16:09:39] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[16:09:39] DEBUG — Creating converter from 7 to 5
+[16:09:39] DEBUG — Creating converter from 5 to 7
+[16:09:39] DEBUG — Creating converter from 7 to 5
+[16:09:39] DEBUG — Creating converter from 5 to 7
+[16:09:40] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[16:09:40] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[16:09:40] DEBUG — interactive is False
+[16:09:40] DEBUG — platform is win32
+[16:09:40] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[16:09:40] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[16:09:41] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[16:09:41] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[16:09:41] DEBUG — interactive is False
+[16:09:41] DEBUG — platform is win32
+[16:09:41] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[16:09:41] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[16:09:41] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[16:09:42] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:09:42] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[16:09:42] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[16:09:42] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:09:43] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[16:09:43] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[16:09:43] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+[16:09:43] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[16:09:43] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:09:43] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[16:09:43] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/audio_tokenizer_config.json HTTP/1.1" 404 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[16:09:44] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/audio_tokenizer_config.json HTTP/1.1" 404 0
+[16:09:45] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:09:45] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:09:45] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[16:09:45] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:09:45] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[16:09:45] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[16:09:45] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[16:09:45] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[16:09:45] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[16:09:45] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[16:09:46] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[16:09:46] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[16:09:46] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[16:09:46] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[16:09:46] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[16:09:46] INFO — 127.0.0.1 - - [20/Mar/2026 16:09:46] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[16:09:46] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[16:09:46] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[16:09:46] INFO — Loading sentence-transformers...
+[16:09:46] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[16:09:47] INFO — 127.0.0.1 - - [20/Mar/2026 16:09:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[16:09:47] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[16:09:47] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[16:09:47] INFO — 127.0.0.1 - - [20/Mar/2026 16:09:47] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[16:09:47] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[16:09:47] INFO — Loading sentence-transformers...
+[16:09:48] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[16:09:48] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[16:09:51] INFO — 127.0.0.1 - - [20/Mar/2026 16:09:51] "GET /faces HTTP/1.1" 200 -
+[16:09:51] DEBUG — Starting new HTTPS connection (1): api.open-meteo.com:443
+[16:09:52] DEBUG — https://api.open-meteo.com:443 "GET /v1/forecast?latitude=13.0827&longitude=80.2707&current=temperature_2m&current=weathercode&current=windspeed_10m&current=precipitation&timezone=auto HTTP/1.1" 200 None
+[16:09:52] INFO — 127.0.0.1 - - [20/Mar/2026 16:09:52] "GET /startup_info HTTP/1.1" 200 -
+[16:11:54] INFO — 127.0.0.1 - - [20/Mar/2026 16:11:54] "DELETE /faces/Null HTTP/1.1" 200 -
+[16:11:54] INFO — 127.0.0.1 - - [20/Mar/2026 16:11:54] "GET /faces HTTP/1.1" 200 -
+[17:23:33] INFO — ==================================================
+[17:23:33] INFO —   WARMING UP ALL MODELS...
+[17:23:33] INFO — ==================================================
+[17:23:33] INFO — Loading BLIP model...
+[17:23:33] INFO — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[17:23:33] INFO — [33mPress CTRL+C to quit[0m
+[17:23:33] INFO —  * Restarting with stat
+[17:23:33] INFO — ==================================================
+[17:23:33] INFO —   WARMING UP ALL MODELS...
+[17:23:33] INFO — ==================================================
+[17:23:33] INFO — Loading BLIP model...
+[17:23:33] WARNING —  * Debugger is active!
+[17:23:33] INFO —  * Debugger PIN: 863-714-109
+[17:23:47] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[17:23:47] DEBUG — Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[17:23:48] DEBUG — Creating converter from 7 to 5
+[17:23:48] DEBUG — Creating converter from 7 to 5
+[17:23:48] DEBUG — Creating converter from 5 to 7
+[17:23:48] DEBUG — Creating converter from 5 to 7
+[17:23:48] DEBUG — Creating converter from 7 to 5
+[17:23:48] DEBUG — Creating converter from 7 to 5
+[17:23:48] DEBUG — Creating converter from 5 to 7
+[17:23:48] DEBUG — Creating converter from 5 to 7
+[17:23:54] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[17:23:54] DEBUG — matplotlib data path: C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\matplotlib\mpl-data
+[17:23:54] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[17:23:54] DEBUG — interactive is False
+[17:23:54] DEBUG — platform is win32
+[17:23:54] DEBUG — CONFIGDIR=C:\Users\Ishwarya\.matplotlib
+[17:23:54] DEBUG — interactive is False
+[17:23:54] DEBUG — platform is win32
+[17:23:55] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[17:23:55] DEBUG — CACHEDIR=C:\Users\Ishwarya\.matplotlib
+[17:23:55] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[17:23:55] DEBUG — Using fontManager instance from C:\Users\Ishwarya\.matplotlib\fontlist-v390.json
+[17:23:59] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[17:23:59] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/preprocessor_config.json HTTP/1.1" 200 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[17:23:59] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/tokenizer_config.json HTTP/1.1" 200 0
+[17:23:59] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[17:23:59] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[17:24:00] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[17:24:00] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[17:24:00] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+[17:24:00] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[17:24:00] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/audio_tokenizer_config.json HTTP/1.1" 404 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/audio_tokenizer_config.json HTTP/1.1" 404 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[17:24:01] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/1.1" 307 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /api/resolve-cache/models/Salesforce/blip-image-captioning-base/82a37760796d32b1411fe092ab5d4e227313294b/config.json HTTP/1.1" 200 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[17:24:02] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/1.1" 404 0
+[17:24:02] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[17:24:02] DEBUG — Starting new HTTPS connection (1): huggingface.co:443
+[17:24:02] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[17:24:02] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/main HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/discussions?p=0 HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[17:24:03] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/1.1" 404 0
+[17:24:03] DEBUG — https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base/commits/refs%2Fpr%2F52 HTTP/1.1" 200 None
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/custom_generate/generate.py HTTP/1.1" 404 0
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors.index.json HTTP/1.1" 404 0
+[17:24:04] INFO — Loading sentence-transformers...
+[17:24:04] INFO — Loading sentence-transformers...
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[17:24:04] DEBUG — https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/refs%2Fpr%2F52/model.safetensors HTTP/1.1" 302 0
+[17:34:25] INFO — 192.168.0.107 - - [20/Mar/2026 17:34:25] "GET / HTTP/1.1" 200 -
+[17:34:25] INFO — 192.168.0.107 - - [20/Mar/2026 17:34:25] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:25] INFO — 192.168.0.107 - - [20/Mar/2026 17:34:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[17:34:47] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:47] "GET / HTTP/1.1" 200 -
+[17:34:47] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:47] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:34:47] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:47] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:48] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:48] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:48] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[17:34:48] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:48] "GET / HTTP/1.1" 200 -
+[17:34:48] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:48] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "GET / HTTP/1.1" 200 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "GET / HTTP/1.1" 200 -
+[17:34:49] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:49] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "GET / HTTP/1.1" 200 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:50] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:50] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:34:51] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:51] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:34:54] DEBUG — Starting new HTTPS connection (1): api.open-meteo.com:443
+[17:34:54] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:54] "GET /faces HTTP/1.1" 200 -
+[17:34:55] DEBUG — https://api.open-meteo.com:443 "GET /v1/forecast?latitude=13.0827&longitude=80.2707&current=temperature_2m&current=weathercode&current=windspeed_10m&current=precipitation&timezone=auto HTTP/1.1" 200 None
+[17:34:55] INFO — 127.0.0.1 - - [20/Mar/2026 17:34:55] "GET /startup_info HTTP/1.1" 200 -
+[17:39:09] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:09] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:39:10] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[17:39:10] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[17:39:10] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:10] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:39:11] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:39:11] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:39:13] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:13] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[17:39:14] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:14] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:39:15] INFO — 127.0.0.1 - - [20/Mar/2026 17:39:15] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[17:55:23] INFO —  * Detected change in 'C:\\Users\\Ishwarya\\Documents\\Final year project\\main\\finalllyyyy\\Project\\app.py', reloading
+[17:55:25] INFO —  * Restarting with stat
+[17:55:26] INFO - ==================================================
+[17:55:26] INFO -   WARMING UP ALL MODELS...
+[17:55:26] INFO - ==================================================
+[17:55:26] INFO - Loading BLIP...
+[17:55:26] INFO - Loading sentence-transformers...
+[17:55:26] INFO - Loading currency YOLO...
+[17:55:26] INFO - Loading COCO YOLO...
+[17:55:26] WARNING - sentence_transformers not installed. Using keyword fallback. Run: pip install sentence-transformers
+[17:55:26] INFO - Currency YOLO loaded OK
+[17:55:26] INFO - COCO YOLO loaded OK
+[17:55:40] INFO - BLIP loaded OK
+[17:59:39] INFO - ==================================================
+[17:59:39] INFO -   WARMING UP ALL MODELS...
+[17:59:39] INFO - ==================================================
+[17:59:39] INFO - Loading BLIP...
+[17:59:39] INFO - Loading sentence-transformers...
+[17:59:39] INFO - Loading currency YOLO...
+[17:59:39] INFO - Loading COCO YOLO...
+[17:59:39] INFO - Currency YOLO loaded OK
+[17:59:39] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[17:59:39] INFO - [33mPress CTRL+C to quit[0m
+[17:59:39] INFO - COCO YOLO loaded OK
+[17:59:52] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[17:59:53] INFO - BLIP loaded OK
+[17:59:56] WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[18:00:04] INFO - Intent model loaded OK
+[18:00:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:11] "GET / HTTP/1.1" 200 -
+[18:00:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:00:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:11] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:00:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:00:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[18:00:13] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:13] "GET /faces HTTP/1.1" 200 -
+[18:00:13] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:13] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:00:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:17] "GET /startup_info?lat=13.027762152787696&lon=80.27049904221401 HTTP/1.1" 200 -
+[18:00:54] INFO - CMD: 'what is this?'
+[18:00:54] INFO - Semantic intent: 'scene' score=0.77
+[18:00:54] INFO - INTENT: scene
+[18:00:58] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:58] "POST /process HTTP/1.1" 200 -
+[18:00:58] INFO - 127.0.0.1 - - [20/Mar/2026 18:00:58] "GET /memory HTTP/1.1" 200 -
+[18:02:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:06] "GET / HTTP/1.1" 200 -
+[18:02:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:02:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:06] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:02:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:02:09] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:09] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:02:09] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:09] "GET /faces HTTP/1.1" 200 -
+[18:02:12] INFO - 127.0.0.1 - - [20/Mar/2026 18:02:12] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:03:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:06] "GET / HTTP/1.1" 200 -
+[18:03:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:06] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:03:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:03:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:06] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:03:09] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:09] "GET /faces HTTP/1.1" 200 -
+[18:03:09] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:09] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:03:09] INFO - 127.0.0.1 - - [20/Mar/2026 18:03:09] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:03:43] INFO - CMD: 'who am i?'
+[18:03:44] INFO - Semantic intent: 'face' score=0.83
+[18:03:44] INFO - INTENT: face
+[18:04:35] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:35] "GET / HTTP/1.1" 200 -
+[18:04:35] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:35] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:04:35] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:35] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:04:35] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:35] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:04:37] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:37] "GET /faces HTTP/1.1" 200 -
+[18:04:37] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:37] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:04:37] INFO - 127.0.0.1 - - [20/Mar/2026 18:04:37] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:05:11] INFO - CMD: 'colour.'
+[18:05:11] INFO - Semantic intent: 'color' score=0.79
+[18:05:11] INFO - INTENT: color
+[18:05:16] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:16] "POST /process HTTP/1.1" 200 -
+[18:05:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:17] "POST /process HTTP/1.1" 200 -
+[18:05:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:17] "GET /memory HTTP/1.1" 200 -
+[18:05:28] INFO - CMD: 'what objects?'
+[18:05:28] INFO - Semantic intent: 'objects' score=0.84
+[18:05:28] INFO - INTENT: objects
+[18:05:29] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:29] "POST /process HTTP/1.1" 200 -
+[18:05:30] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:30] "GET /memory HTTP/1.1" 200 -
+[18:05:41] INFO - CMD: 'objects.'
+[18:05:41] INFO - Semantic intent: 'objects' score=0.79
+[18:05:41] INFO - INTENT: objects
+[18:05:44] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:44] "POST /process HTTP/1.1" 200 -
+[18:05:44] INFO - 127.0.0.1 - - [20/Mar/2026 18:05:44] "GET /memory HTTP/1.1" 200 -
+[18:05:57] INFO - CMD: 'objects.'
+[18:05:57] INFO - Semantic intent: 'objects' score=0.79
+[18:05:57] INFO - INTENT: objects
+[18:06:01] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:01] "POST /process HTTP/1.1" 200 -
+[18:06:01] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:01] "GET /memory HTTP/1.1" 200 -
+[18:06:14] INFO - CMD: 'what object?'
+[18:06:15] INFO - Semantic intent: 'objects' score=0.77
+[18:06:15] INFO - INTENT: objects
+[18:06:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:17] "POST /process HTTP/1.1" 200 -
+[18:06:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:17] "GET /memory HTTP/1.1" 200 -
+[18:06:27] INFO - CMD: 'people.'
+[18:06:27] INFO - Semantic intent: 'persons' score=0.72
+[18:06:27] INFO - INTENT: persons
+[18:06:28] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:28] "POST /process HTTP/1.1" 200 -
+[18:06:29] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:29] "GET /memory HTTP/1.1" 200 -
+[18:06:44] INFO - CMD: 'any obstacle?'
+[18:06:44] INFO - Semantic intent: 'danger' score=0.88
+[18:06:44] INFO - INTENT: danger
+[18:06:45] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:45] "POST /process HTTP/1.1" 200 -
+[18:06:46] INFO - 127.0.0.1 - - [20/Mar/2026 18:06:46] "GET /memory HTTP/1.1" 200 -
+[18:07:20] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:20] "GET / HTTP/1.1" 200 -
+[18:07:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:21] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:07:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:21] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:07:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:21] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:07:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:22] "GET /faces HTTP/1.1" 200 -
+[18:07:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:22] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:07:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:22] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:07:56] INFO - CMD: 'where am i?'
+[18:07:56] INFO - Semantic intent: 'location' score=0.88
+[18:07:56] INFO - INTENT: location
+[18:07:57] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:57] "POST /process HTTP/1.1" 200 -
+[18:07:57] INFO - 127.0.0.1 - - [20/Mar/2026 18:07:57] "GET /memory HTTP/1.1" 200 -
+[18:08:22] INFO - CMD: 'weather.'
+[18:08:22] INFO - Semantic intent: 'weather' score=0.73
+[18:08:22] INFO - INTENT: weather
+[18:08:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:08:22] "POST /process HTTP/1.1" 200 -
+[18:08:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:08:22] "GET /memory HTTP/1.1" 200 -
+[18:08:42] INFO - CMD: 'master.'
+[18:08:42] INFO - Semantic intent: 'help' score=0.33
+[18:08:42] INFO - INTENT: help
+[18:08:42] INFO - 127.0.0.1 - - [20/Mar/2026 18:08:42] "POST /process HTTP/1.1" 200 -
+[18:08:42] INFO - 127.0.0.1 - - [20/Mar/2026 18:08:42] "GET /memory HTTP/1.1" 200 -
+[18:10:17] INFO - CMD: 'speak faster.'
+[18:10:17] INFO - Semantic intent: 'faster' score=0.96
+[18:10:17] INFO - INTENT: faster
+[18:10:17] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:17] "POST /process HTTP/1.1" 200 -
+[18:10:18] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:18] "GET /memory HTTP/1.1" 200 -
+[18:10:30] INFO - CMD: 'how far?'
+[18:10:30] INFO - Semantic intent: 'distance' score=0.83
+[18:10:30] INFO - INTENT: distance
+[18:10:31] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:31] "POST /process HTTP/1.1" 200 -
+[18:10:31] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:31] "GET /memory HTTP/1.1" 200 -
+[18:10:46] INFO - CMD: 'how far?'
+[18:10:46] INFO - Semantic intent: 'distance' score=0.83
+[18:10:46] INFO - INTENT: distance
+[18:10:47] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:47] "POST /process HTTP/1.1" 200 -
+[18:10:47] INFO - 127.0.0.1 - - [20/Mar/2026 18:10:47] "GET /memory HTTP/1.1" 200 -
+[18:11:03] INFO - CMD: 'how far?'
+[18:11:03] INFO - Semantic intent: 'distance' score=0.83
+[18:11:03] INFO - INTENT: distance
+[18:11:04] INFO - 127.0.0.1 - - [20/Mar/2026 18:11:04] "POST /process HTTP/1.1" 200 -
+[18:11:05] INFO - 127.0.0.1 - - [20/Mar/2026 18:11:05] "GET /memory HTTP/1.1" 200 -
+[18:11:22] INFO - CMD: 'far.'
+[18:11:23] INFO - Semantic intent: 'distance' score=0.55
+[18:11:23] INFO - INTENT: distance
+[18:11:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:11:24] "POST /process HTTP/1.1" 200 -
+[18:11:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:11:24] "GET /memory HTTP/1.1" 200 -
+[18:12:03] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:03] "GET / HTTP/1.1" 200 -
+[18:12:03] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:03] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:12:03] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:03] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:12:03] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:03] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:12:05] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:05] "GET /faces HTTP/1.1" 200 -
+[18:12:05] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:05] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:12:11] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:11] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:12:44] INFO - CMD: 'what time is it?'
+[18:12:44] INFO - Semantic intent: 'time' score=0.92
+[18:12:44] INFO - INTENT: time
+[18:12:44] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:44] "POST /process HTTP/1.1" 200 -
+[18:12:45] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:45] "GET /memory HTTP/1.1" 200 -
+[18:12:55] INFO - CMD: 'running.'
+[18:12:55] INFO - Semantic intent: 'slower' score=0.48
+[18:12:55] INFO - INTENT: slower
+[18:12:55] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:55] "POST /process HTTP/1.1" 200 -
+[18:12:55] INFO - 127.0.0.1 - - [20/Mar/2026 18:12:55] "GET /memory HTTP/1.1" 200 -
+[18:13:06] INFO - CMD: 'good morning.'
+[18:13:07] INFO - Semantic intent: 'briefing' score=0.94
+[18:13:07] INFO - INTENT: briefing
+[18:13:07] INFO - 127.0.0.1 - - [20/Mar/2026 18:13:07] "POST /process HTTP/1.1" 200 -
+[18:13:07] INFO - 127.0.0.1 - - [20/Mar/2026 18:13:07] "GET /memory HTTP/1.1" 200 -
+[18:13:41] INFO - CMD: 'again.'
+[18:13:42] INFO - Semantic intent: 'repeat' score=0.82
+[18:13:42] INFO - INTENT: repeat
+[18:13:42] INFO - 127.0.0.1 - - [20/Mar/2026 18:13:42] "POST /process HTTP/1.1" 200 -
+[18:13:42] INFO - 127.0.0.1 - - [20/Mar/2026 18:13:42] "GET /memory HTTP/1.1" 200 -
+[18:14:16] INFO - CMD: 'current weather.'
+[18:14:16] INFO - Semantic intent: 'weather' score=0.67
+[18:14:16] INFO - INTENT: weather
+[18:14:16] INFO - 127.0.0.1 - - [20/Mar/2026 18:14:16] "POST /process HTTP/1.1" 200 -
+[18:14:16] INFO - 127.0.0.1 - - [20/Mar/2026 18:14:16] "GET /memory HTTP/1.1" 200 -
+[18:14:36] INFO - CMD: 'when is the light?'
+[18:14:36] INFO - Semantic intent: 'light' score=0.69
+[18:14:36] INFO - INTENT: light
+[18:14:37] INFO - 127.0.0.1 - - [20/Mar/2026 18:14:37] "POST /process HTTP/1.1" 200 -
+[18:14:37] INFO - 127.0.0.1 - - [20/Mar/2026 18:14:37] "GET /memory HTTP/1.1" 200 -
+[18:15:04] INFO - CMD: 'people.'
+[18:15:04] INFO - Semantic intent: 'persons' score=0.72
+[18:15:04] INFO - INTENT: persons
+[18:15:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:06] "POST /process HTTP/1.1" 200 -
+[18:15:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:06] "GET /memory HTTP/1.1" 200 -
+[18:15:19] INFO - CMD: 'what colour?'
+[18:15:19] INFO - Semantic intent: 'color' score=0.90
+[18:15:19] INFO - INTENT: color
+[18:15:20] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:20] "POST /process HTTP/1.1" 200 -
+[18:15:20] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:20] "GET /memory HTTP/1.1" 200 -
+[18:15:31] INFO - CMD: 'your face.'
+[18:15:31] INFO - Semantic intent: 'face' score=0.58
+[18:15:31] INFO - INTENT: face
+[18:15:33] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:33] "POST /process HTTP/1.1" 200 -
+[18:15:33] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:33] "GET /memory HTTP/1.1" 200 -
+[18:15:52] INFO - CMD: 'register face.'
+[18:15:52] INFO - Semantic intent: 'register' score=0.94
+[18:15:52] INFO - INTENT: register
+[18:15:52] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:52] "POST /process HTTP/1.1" 200 -
+[18:15:53] INFO - 127.0.0.1 - - [20/Mar/2026 18:15:53] "GET /memory HTTP/1.1" 200 -
+[18:16:04] INFO - CMD: 'aishwarya.'
+[18:16:04] INFO - Semantic intent: 'face' score=0.34
+[18:16:04] INFO - INTENT: face
+[18:16:04] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:04] "POST /process HTTP/1.1" 200 -
+[18:16:04] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:04] "GET /memory HTTP/1.1" 200 -
+[18:16:04] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:04] "GET /faces HTTP/1.1" 200 -
+[18:16:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:22] "GET / HTTP/1.1" 200 -
+[18:16:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:22] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:16:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:22] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:16:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:22] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:16:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:24] "GET /faces HTTP/1.1" 200 -
+[18:16:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:24] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:16:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:16:24] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:17:14] INFO - CMD: 'who am i?'
+[18:17:14] INFO - Semantic intent: 'face' score=0.83
+[18:17:14] INFO - INTENT: face
+[18:17:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:17:21] "POST /process HTTP/1.1" 200 -
+[18:17:22] INFO - 127.0.0.1 - - [20/Mar/2026 18:17:22] "GET /memory HTTP/1.1" 200 -
+[18:18:11] INFO - CMD: 'read this.'
+[18:18:11] INFO - Semantic intent: 'ocr' score=0.87
+[18:18:11] INFO - INTENT: ocr
+[18:18:12] INFO - Running Surya OCR...
+[18:18:12] WARNING - Surya not installed, trying EasyOCR...
+[18:18:12] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[18:18:12] WARNING - Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+[18:18:24] INFO - Download complete
+[18:18:24] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[18:18:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:18:24] "POST /process HTTP/1.1" 200 -
+[18:18:25] INFO - 127.0.0.1 - - [20/Mar/2026 18:18:25] "GET /memory HTTP/1.1" 200 -
+[18:18:51] INFO - CMD: 'this.'
+[18:18:51] INFO - Semantic intent: 'ocr' score=0.39
+[18:18:51] INFO - INTENT: ocr
+[18:18:52] INFO - Running Surya OCR...
+[18:18:52] WARNING - Surya not installed, trying EasyOCR...
+[18:18:52] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[18:18:52] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[18:18:52] INFO - 127.0.0.1 - - [20/Mar/2026 18:18:52] "POST /process HTTP/1.1" 200 -
+[18:18:52] INFO - 127.0.0.1 - - [20/Mar/2026 18:18:52] "GET /memory HTTP/1.1" 200 -
+[18:19:01] INFO - CMD: 'read this.'
+[18:19:01] INFO - Semantic intent: 'ocr' score=0.87
+[18:19:01] INFO - INTENT: ocr
+[18:19:02] INFO - Running Surya OCR...
+[18:19:02] WARNING - Surya not installed, trying EasyOCR...
+[18:19:02] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[18:19:02] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[18:19:02] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:02] "POST /process HTTP/1.1" 200 -
+[18:19:03] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:03] "GET /memory HTTP/1.1" 200 -
+[18:19:22] INFO - CMD: 'this.'
+[18:19:22] INFO - Semantic intent: 'ocr' score=0.39
+[18:19:22] INFO - INTENT: ocr
+[18:19:23] INFO - Running Surya OCR...
+[18:19:23] WARNING - Surya not installed, trying EasyOCR...
+[18:19:23] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[18:19:23] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[18:19:23] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:23] "POST /process HTTP/1.1" 200 -
+[18:19:24] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:24] "GET /memory HTTP/1.1" 200 -
+[18:19:32] INFO - CMD: 'what objects?'
+[18:19:32] INFO - Semantic intent: 'objects' score=0.84
+[18:19:32] INFO - INTENT: objects
+[18:19:34] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:34] "POST /process HTTP/1.1" 200 -
+[18:19:34] INFO - 127.0.0.1 - - [20/Mar/2026 18:19:34] "GET /memory HTTP/1.1" 200 -
+[18:20:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:21] "GET / HTTP/1.1" 200 -
+[18:20:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:21] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:20:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:21] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:20:21] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:21] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:20:23] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:23] "GET /faces HTTP/1.1" 200 -
+[18:20:23] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:23] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:20:23] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:23] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:20:57] INFO - CMD: 'scan this.'
+[18:20:57] INFO - Semantic intent: 'qr' score=0.91
+[18:20:57] INFO - INTENT: qr
+[18:20:59] ERROR - QR error: Could not find module 'C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\pyzbar\libzbar-64.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[18:20:59] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:59] "POST /process HTTP/1.1" 200 -
+[18:20:59] INFO - 127.0.0.1 - - [20/Mar/2026 18:20:59] "GET /memory HTTP/1.1" 200 -
+[18:21:29] INFO - CMD: 'what is this?'
+[18:21:29] INFO - Semantic intent: 'scene' score=0.77
+[18:21:29] INFO - INTENT: scene
+[18:21:33] INFO - 127.0.0.1 - - [20/Mar/2026 18:21:33] "POST /process HTTP/1.1" 200 -
+[18:21:33] INFO - 127.0.0.1 - - [20/Mar/2026 18:21:33] "GET /memory HTTP/1.1" 200 -
+[18:22:25] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:25] "GET / HTTP/1.1" 200 -
+[18:22:25] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:25] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:22:25] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:25] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:22:26] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:26] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[18:22:28] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:28] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[18:22:28] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:28] "GET /faces HTTP/1.1" 200 -
+[18:22:30] INFO - 127.0.0.1 - - [20/Mar/2026 18:22:30] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[18:23:04] INFO - CMD: 'danger.'
+[18:23:04] INFO - Semantic intent: 'danger' score=0.71
+[18:23:04] INFO - INTENT: danger
+[18:23:05] INFO - 127.0.0.1 - - [20/Mar/2026 18:23:05] "POST /process HTTP/1.1" 200 -
+[18:23:06] INFO - 127.0.0.1 - - [20/Mar/2026 18:23:06] "GET /memory HTTP/1.1" 200 -
+[19:38:08] INFO - ==================================================
+[19:38:08] INFO -   WARMING UP ALL MODELS...
+[19:38:08] INFO - ==================================================
+[19:38:08] INFO - Loading BLIP...
+[19:38:08] INFO - Loading sentence-transformers...
+[19:38:08] INFO - Loading COCO YOLO...
+[19:38:08] INFO - Loading currency YOLO...
+[19:38:08] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[19:38:08] INFO - [33mPress CTRL+C to quit[0m
+[19:38:08] INFO - Currency YOLO loaded OK
+[19:38:09] INFO - COCO YOLO loaded OK
+[19:38:43] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[19:38:44] INFO - BLIP loaded OK
+[19:38:50] INFO - Intent model loaded OK
+[20:33:24] INFO - ==================================================
+[20:33:24] INFO -   WARMING UP ALL MODELS...
+[20:33:24] INFO - ==================================================
+[20:33:24] INFO - Loading BLIP...
+[20:33:24] INFO - Loading sentence-transformers...
+[20:33:24] INFO - Loading COCO YOLO...
+[20:33:24] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[20:33:24] INFO - [33mPress CTRL+C to quit[0m
+[20:33:25] INFO - COCO YOLO loaded OK
+[20:33:42] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[20:33:44] INFO - BLIP loaded OK
+[20:33:48] INFO - Intent model loaded OK
+[20:34:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:34:57] "GET / HTTP/1.1" 200 -
+[20:34:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:34:57] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:34:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:34:57] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:34:58] INFO - 127.0.0.1 - - [20/Mar/2026 20:34:58] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:34:58] INFO - 127.0.0.1 - - [20/Mar/2026 20:34:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:35:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:00] "GET / HTTP/1.1" 200 -
+[20:35:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:00] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:35:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:00] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:35:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:00] "GET /memory HTTP/1.1" 200 -
+[20:35:01] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:01] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:35:03] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:03] "GET /memory HTTP/1.1" 200 -
+[20:35:03] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:03] "GET /faces HTTP/1.1" 200 -
+[20:35:06] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:06] "GET /startup_info HTTP/1.1" 200 -
+[20:35:53] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:53] "GET / HTTP/1.1" 200 -
+[20:35:53] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:53] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:35:53] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:53] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:35:53] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:53] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:35:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:57] "GET /memory HTTP/1.1" 200 -
+[20:35:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:57] "GET /faces HTTP/1.1" 200 -
+[20:35:59] INFO - 127.0.0.1 - - [20/Mar/2026 20:35:59] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[20:37:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:31] "GET / HTTP/1.1" 200 -
+[20:37:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:31] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:37:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:31] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:37:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:37:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:31] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:37:33] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:33] "GET /faces HTTP/1.1" 200 -
+[20:37:34] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:34] "GET /memory HTTP/1.1" 200 -
+[20:37:35] INFO - 127.0.0.1 - - [20/Mar/2026 20:37:35] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[20:38:47] INFO - 127.0.0.1 - - [20/Mar/2026 20:38:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:38:48] INFO - 127.0.0.1 - - [20/Mar/2026 20:38:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:39:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:11] "GET / HTTP/1.1" 200 -
+[20:39:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:11] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:39:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:39:12] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:12] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:39:14] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:14] "GET /memory HTTP/1.1" 200 -
+[20:39:14] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:14] "GET /faces HTTP/1.1" 200 -
+[20:39:16] INFO - 127.0.0.1 - - [20/Mar/2026 20:39:16] "GET /startup_info?lat=13.027773410498634&lon=80.27045194959207 HTTP/1.1" 200 -
+[20:40:00] INFO - ==================================================
+[20:40:00] INFO -   WARMING UP ALL MODELS...
+[20:40:00] INFO - ==================================================
+[20:40:00] INFO - Loading BLIP...
+[20:40:00] INFO - Loading sentence-transformers...
+[20:40:00] INFO - Loading COCO YOLO...
+[20:40:01] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[20:40:01] INFO - [33mPress CTRL+C to quit[0m
+[20:40:01] INFO - COCO YOLO loaded OK
+[20:40:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:11] "GET / HTTP/1.1" 200 -
+[20:40:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:11] "[33mGET /static/sw.js HTTP/1.1[0m" 404 -
+[20:40:11] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:11] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:40:13] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:13] "GET /faces HTTP/1.1" 200 -
+[20:40:14] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:14] "GET /memory HTTP/1.1" 200 -
+[20:40:15] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:15] "GET /startup_info HTTP/1.1" 200 -
+[20:40:29] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[20:40:31] INFO - BLIP loaded OK
+[20:40:38] INFO - Intent model loaded OK
+[20:40:51] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:51] "[33mGET /static/manifest.json HTTP/1.1[0m" 404 -
+[20:40:51] INFO - 127.0.0.1 - - [20/Mar/2026 20:40:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[20:42:01] INFO - ==================================================
+[20:42:01] INFO -   WARMING UP ALL MODELS...
+[20:42:01] INFO - ==================================================
+[20:42:01] INFO - Loading BLIP...
+[20:42:01] INFO - Loading sentence-transformers...
+[20:42:01] INFO - Loading COCO YOLO...
+[20:42:01] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[20:42:01] INFO - [33mPress CTRL+C to quit[0m
+[20:42:01] INFO - COCO YOLO loaded OK
+[20:42:17] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[20:42:19] INFO - BLIP loaded OK
+[20:42:22] INFO - Intent model loaded OK
+[20:42:30] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:30] "GET /static/sw.js HTTP/1.1" 200 -
+[20:42:30] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:30] "GET / HTTP/1.1" 200 -
+[20:42:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:42:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:31] "GET /static/manifest.json HTTP/1.1" 200 -
+[20:42:31] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:31] "[33mGET /static/icon-192.png HTTP/1.1[0m" 404 -
+[20:42:33] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:33] "GET /memory HTTP/1.1" 200 -
+[20:42:44] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:44] "GET /faces HTTP/1.1" 200 -
+[20:42:46] INFO - 127.0.0.1 - - [20/Mar/2026 20:42:46] "GET /startup_info HTTP/1.1" 200 -
+[20:44:07] INFO - 127.0.0.1 - - [20/Mar/2026 20:44:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:44:07] INFO - 127.0.0.1 - - [20/Mar/2026 20:44:07] "[33mGET /static/icon-192.png HTTP/1.1[0m" 404 -
+[20:44:10] INFO - 127.0.0.1 - - [20/Mar/2026 20:44:10] "GET /memory HTTP/1.1" 200 -
+[20:48:56] INFO - ==================================================
+[20:48:56] INFO -   WARMING UP ALL MODELS...
+[20:48:56] INFO - ==================================================
+[20:48:56] INFO - Loading BLIP...
+[20:48:56] INFO - Loading sentence-transformers...
+[20:48:56] INFO - Loading COCO YOLO...
+[20:48:56] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[20:48:56] INFO - [33mPress CTRL+C to quit[0m
+[20:48:56] INFO - COCO YOLO loaded OK
+[20:49:10] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[20:49:12] INFO - BLIP loaded OK
+[20:49:15] INFO - Intent model loaded OK
+[20:50:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:50:00] "GET / HTTP/1.1" 200 -
+[20:52:56] INFO - 127.0.0.1 - - [20/Mar/2026 20:52:56] "GET /faces HTTP/1.1" 200 -
+[20:52:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:52:57] "GET /startup_info HTTP/1.1" 200 -
+[20:53:14] INFO - CMD: 'read this.'
+[20:53:14] INFO - Semantic intent: 'ocr' score=0.87
+[20:53:14] INFO - INTENT: ocr
+[20:53:16] INFO - Running Surya OCR...
+[20:53:16] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[20:53:17] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[20:53:17] INFO - 127.0.0.1 - - [20/Mar/2026 20:53:17] "POST /process HTTP/1.1" 200 -
+[20:53:17] INFO - 127.0.0.1 - - [20/Mar/2026 20:53:17] "GET /memory HTTP/1.1" 200 -
+[20:53:57] INFO - 127.0.0.1 - - [20/Mar/2026 20:53:57] "GET / HTTP/1.1" 200 -
+[20:54:00] INFO - 127.0.0.1 - - [20/Mar/2026 20:54:00] "GET /faces HTTP/1.1" 200 -
+[20:54:03] INFO - 127.0.0.1 - - [20/Mar/2026 20:54:03] "GET /startup_info?lat=13.02778882415038&lon=80.27047020307242 HTTP/1.1" 200 -
+[20:55:33] INFO - 127.0.0.1 - - [20/Mar/2026 20:55:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[20:58:19] INFO - ==================================================
+[20:58:19] INFO -   WARMING UP ALL MODELS...
+[20:58:19] INFO - ==================================================
+[20:58:19] INFO - Loading BLIP...
+[20:58:19] INFO - Loading sentence-transformers...
+[20:58:19] INFO - Loading COCO YOLO...
+[20:58:19] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[20:58:19] INFO - [33mPress CTRL+C to quit[0m
+[20:58:19] INFO - COCO YOLO loaded OK
+[20:58:34] INFO - 127.0.0.1 - - [20/Mar/2026 20:58:34] "GET / HTTP/1.1" 200 -
+[20:58:38] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[20:58:39] INFO - 127.0.0.1 - - [20/Mar/2026 20:58:39] "GET /faces HTTP/1.1" 200 -
+[20:58:40] INFO - 127.0.0.1 - - [20/Mar/2026 20:58:40] "GET /startup_info HTTP/1.1" 200 -
+[20:58:41] INFO - BLIP loaded OK
+[20:58:47] INFO - Intent model loaded OK
+[20:58:57] INFO - CMD: 'what is this?'
+[20:58:57] INFO - Semantic intent: 'scene' score=0.77
+[20:58:57] INFO - INTENT: scene
+[20:59:02] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:02] "POST /process HTTP/1.1" 200 -
+[20:59:03] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:03] "GET /memory HTTP/1.1" 200 -
+[20:59:09] INFO - CMD: 'this.'
+[20:59:09] INFO - Semantic intent: 'ocr' score=0.39
+[20:59:09] INFO - INTENT: ocr
+[20:59:10] INFO - Running Surya OCR v0.17+...
+[20:59:17] WARNING - Surya v0.17 failed: RecognitionPredictor.__init__() missing 1 required positional argument: 'foundation_predictor', falling back to EasyOCR...
+[20:59:17] INFO - Running EasyOCR...
+[20:59:18] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[20:59:19] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[20:59:19] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:19] "POST /process HTTP/1.1" 200 -
+[20:59:19] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:19] "GET /memory HTTP/1.1" 200 -
+[20:59:26] INFO - CMD: 'read this.'
+[20:59:26] INFO - Semantic intent: 'ocr' score=0.87
+[20:59:26] INFO - INTENT: ocr
+[20:59:27] INFO - Running Surya OCR v0.17+...
+[20:59:28] WARNING - Surya v0.17 failed: RecognitionPredictor.__init__() missing 1 required positional argument: 'foundation_predictor', falling back to EasyOCR...
+[20:59:28] INFO - Running EasyOCR...
+[20:59:28] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[20:59:28] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[20:59:28] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:28] "POST /process HTTP/1.1" 200 -
+[20:59:29] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:29] "GET /memory HTTP/1.1" 200 -
+[20:59:42] INFO - CMD: 'read this.'
+[20:59:42] INFO - Semantic intent: 'ocr' score=0.87
+[20:59:42] INFO - INTENT: ocr
+[20:59:43] INFO - Running Surya OCR v0.17+...
+[20:59:43] WARNING - Surya v0.17 failed: RecognitionPredictor.__init__() missing 1 required positional argument: 'foundation_predictor', falling back to EasyOCR...
+[20:59:43] INFO - Running EasyOCR...
+[20:59:43] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[20:59:44] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[20:59:44] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:44] "POST /process HTTP/1.1" 200 -
+[20:59:45] INFO - 127.0.0.1 - - [20/Mar/2026 20:59:45] "GET /memory HTTP/1.1" 200 -
+[21:02:17] INFO - ==================================================
+[21:02:17] INFO -   WARMING UP ALL MODELS...
+[21:02:17] INFO - ==================================================
+[21:02:17] INFO - Loading BLIP...
+[21:02:17] INFO - Loading sentence-transformers...
+[21:02:17] INFO - Loading COCO YOLO...
+[21:02:17] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[21:02:17] INFO - [33mPress CTRL+C to quit[0m
+[21:02:18] INFO - COCO YOLO loaded OK
+[21:02:22] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:22] "GET / HTTP/1.1" 200 -
+[21:02:22] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:02:23] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:23] "GET /faces HTTP/1.1" 200 -
+[21:02:25] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:25] "GET /startup_info HTTP/1.1" 200 -
+[21:02:44] INFO - CMD: 'what is this?'
+[21:02:44] INFO - INTENT: scene
+[21:02:50] ERROR - BLIP error: 'NoneType' object has no attribute 'generate'
+[21:02:50] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:02:51] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:51] "POST /process HTTP/1.1" 200 -
+[21:02:52] INFO - 127.0.0.1 - - [20/Mar/2026 21:02:52] "GET /memory HTTP/1.1" 200 -
+[21:02:52] INFO - BLIP loaded OK
+[21:02:57] INFO - Intent model loaded OK
+[21:02:59] INFO - CMD: 'what is this?'
+[21:02:59] INFO - Semantic intent: 'scene' score=0.77
+[21:02:59] INFO - INTENT: scene
+[21:03:03] INFO - 127.0.0.1 - - [20/Mar/2026 21:03:03] "POST /process HTTP/1.1" 200 -
+[21:03:04] INFO - 127.0.0.1 - - [20/Mar/2026 21:03:04] "GET /memory HTTP/1.1" 200 -
+[21:03:11] INFO - CMD: 'read this.'
+[21:03:11] INFO - Semantic intent: 'ocr' score=0.87
+[21:03:11] INFO - INTENT: ocr
+[21:03:12] INFO - Running EasyOCR...
+[21:03:12] INFO - Loading EasyOCR model (first time, please wait)...
+[21:03:12] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[21:03:13] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[21:03:13] INFO - 127.0.0.1 - - [20/Mar/2026 21:03:13] "POST /process HTTP/1.1" 200 -
+[21:03:13] INFO - 127.0.0.1 - - [20/Mar/2026 21:03:13] "GET /memory HTTP/1.1" 200 -
+[21:04:22] INFO - 127.0.0.1 - - [20/Mar/2026 21:04:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:06:37] INFO - ==================================================
+[21:06:37] INFO -   WARMING UP ALL MODELS...
+[21:06:37] INFO - ==================================================
+[21:06:37] INFO - Loading BLIP...
+[21:06:37] INFO - Loading sentence-transformers...
+[21:06:37] INFO - Loading COCO YOLO...
+[21:06:37] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[21:06:37] INFO - [33mPress CTRL+C to quit[0m
+[21:06:37] INFO - COCO YOLO loaded OK
+[21:06:45] INFO - 127.0.0.1 - - [20/Mar/2026 21:06:45] "GET / HTTP/1.1" 200 -
+[21:06:47] INFO - 127.0.0.1 - - [20/Mar/2026 21:06:47] "GET /faces HTTP/1.1" 200 -
+[21:06:48] INFO - 127.0.0.1 - - [20/Mar/2026 21:06:48] "GET /startup_info HTTP/1.1" 200 -
+[21:07:04] INFO - CMD: 'what is this?'
+[21:07:04] INFO - INTENT: scene
+[21:07:09] ERROR - BLIP error: 'NoneType' object has no attribute 'generate'
+[21:07:10] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:07:11] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:11] "POST /process HTTP/1.1" 200 -
+[21:07:11] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:11] "GET /memory HTTP/1.1" 200 -
+[21:07:12] INFO - BLIP loaded OK
+[21:07:17] INFO - Intent model loaded OK
+[21:07:19] INFO - CMD: 'is this?'
+[21:07:19] INFO - Semantic intent: 'scene' score=0.45
+[21:07:19] INFO - INTENT: scene
+[21:07:23] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:23] "POST /process HTTP/1.1" 200 -
+[21:07:23] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:23] "GET /memory HTTP/1.1" 200 -
+[21:07:33] INFO - CMD: 'read this.'
+[21:07:33] INFO - Semantic intent: 'ocr' score=0.87
+[21:07:33] INFO - INTENT: ocr
+[21:07:34] INFO - Running EasyOCR...
+[21:07:34] INFO - Loading EasyOCR model (first time)...
+[21:07:34] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[21:07:34] ERROR - EasyOCR error: ValueError: Tamil is only compatible with English, try lang_list=["ta","en"]
+[21:07:34] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:34] "POST /process HTTP/1.1" 200 -
+[21:07:35] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:35] "GET /memory HTTP/1.1" 200 -
+[21:07:46] INFO - CMD: 'read this.'
+[21:07:46] INFO - Semantic intent: 'ocr' score=0.87
+[21:07:46] INFO - INTENT: ocr
+[21:07:47] INFO - Running EasyOCR...
+[21:07:47] INFO - Loading EasyOCR model (first time)...
+[21:07:47] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[21:07:47] ERROR - EasyOCR error: ValueError: Tamil is only compatible with English, try lang_list=["ta","en"]
+[21:07:47] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:47] "POST /process HTTP/1.1" 200 -
+[21:07:48] INFO - 127.0.0.1 - - [20/Mar/2026 21:07:48] "GET /memory HTTP/1.1" 200 -
+[21:08:59] INFO - 127.0.0.1 - - [20/Mar/2026 21:08:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:09:16] INFO - 127.0.0.1 - - [20/Mar/2026 21:09:16] "GET /faces HTTP/1.1" 200 -
+[21:09:17] INFO - 127.0.0.1 - - [20/Mar/2026 21:09:17] "GET /startup_info HTTP/1.1" 200 -
+[21:10:15] INFO - 127.0.0.1 - - [20/Mar/2026 21:10:15] "GET / HTTP/1.1" 200 -
+[21:10:16] INFO - 127.0.0.1 - - [20/Mar/2026 21:10:16] "GET /faces HTTP/1.1" 200 -
+[21:10:18] INFO - 127.0.0.1 - - [20/Mar/2026 21:10:18] "GET /startup_info HTTP/1.1" 200 -
+[21:10:35] INFO - CMD: 'what is this?'
+[21:10:36] INFO - Semantic intent: 'scene' score=0.77
+[21:10:36] INFO - INTENT: scene
+[21:10:39] INFO - 127.0.0.1 - - [20/Mar/2026 21:10:39] "POST /process HTTP/1.1" 200 -
+[21:10:39] INFO - 127.0.0.1 - - [20/Mar/2026 21:10:39] "GET /memory HTTP/1.1" 200 -
+[21:11:07] INFO - 127.0.0.1 - - [20/Mar/2026 21:11:07] "GET / HTTP/1.1" 200 -
+[21:11:09] INFO - 127.0.0.1 - - [20/Mar/2026 21:11:09] "GET /faces HTTP/1.1" 200 -
+[21:11:12] INFO - 127.0.0.1 - - [20/Mar/2026 21:11:12] "GET /startup_info?lat=13.027857308888718&lon=80.27043923026744 HTTP/1.1" 200 -
+[21:11:45] INFO - CMD: 'what is this?'
+[21:11:45] INFO - Semantic intent: 'scene' score=0.77
+[21:11:45] INFO - INTENT: scene
+[21:11:48] INFO - 127.0.0.1 - - [20/Mar/2026 21:11:48] "POST /process HTTP/1.1" 200 -
+[21:11:49] INFO - 127.0.0.1 - - [20/Mar/2026 21:11:49] "GET /memory HTTP/1.1" 200 -
+[21:11:59] INFO - CMD: 'how much?'
+[21:11:59] INFO - Semantic intent: 'currency' score=0.60
+[21:11:59] INFO - INTENT: currency
+[21:12:00] INFO - Running Gemini currency detection...
+[21:12:00] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:12:00] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:00] "POST /process HTTP/1.1" 200 -
+[21:12:01] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:01] "GET /memory HTTP/1.1" 200 -
+[21:12:10] INFO - CMD: 'how much?'
+[21:12:10] INFO - Semantic intent: 'currency' score=0.60
+[21:12:10] INFO - INTENT: currency
+[21:12:10] INFO - Running Gemini currency detection...
+[21:12:11] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:12:11] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:11] "POST /process HTTP/1.1" 200 -
+[21:12:11] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:11] "GET /memory HTTP/1.1" 200 -
+[21:12:22] INFO - CMD: 'how much?'
+[21:12:22] INFO - Semantic intent: 'currency' score=0.60
+[21:12:22] INFO - INTENT: currency
+[21:12:23] INFO - Running Gemini currency detection...
+[21:12:23] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:12:23] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:23] "POST /process HTTP/1.1" 200 -
+[21:12:24] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:24] "GET /memory HTTP/1.1" 200 -
+[21:12:32] INFO - CMD: 'how much?'
+[21:12:32] INFO - Semantic intent: 'currency' score=0.60
+[21:12:32] INFO - INTENT: currency
+[21:12:33] INFO - Running Gemini currency detection...
+[21:12:33] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:12:33] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:33] "POST /process HTTP/1.1" 200 -
+[21:12:34] INFO - 127.0.0.1 - - [20/Mar/2026 21:12:34] "GET /memory HTTP/1.1" 200 -
+[21:13:13] INFO - 127.0.0.1 - - [20/Mar/2026 21:13:13] "GET / HTTP/1.1" 200 -
+[21:13:16] INFO - 127.0.0.1 - - [20/Mar/2026 21:13:16] "GET /faces HTTP/1.1" 200 -
+[21:13:18] INFO - 127.0.0.1 - - [20/Mar/2026 21:13:18] "GET /startup_info?lat=13.02783782313951&lon=80.27047103503025 HTTP/1.1" 200 -
+[21:14:48] INFO - 127.0.0.1 - - [20/Mar/2026 21:14:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:21:29] INFO - ==================================================
+[21:21:29] INFO -   WARMING UP ALL MODELS...
+[21:21:29] INFO - ==================================================
+[21:21:29] INFO - Loading BLIP...
+[21:21:29] INFO - Loading sentence-transformers...
+[21:21:29] INFO - Loading COCO YOLO...
+[21:21:29] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[21:21:29] INFO - [33mPress CTRL+C to quit[0m
+[21:21:29] INFO - COCO YOLO loaded OK
+[21:21:44] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:21:47] INFO - BLIP loaded OK
+[21:21:50] INFO - Intent model loaded OK
+[21:21:56] INFO - 127.0.0.1 - - [20/Mar/2026 21:21:56] "GET / HTTP/1.1" 200 -
+[21:21:58] INFO - 127.0.0.1 - - [20/Mar/2026 21:21:58] "GET /faces HTTP/1.1" 200 -
+[21:22:00] INFO - 127.0.0.1 - - [20/Mar/2026 21:22:00] "GET /startup_info HTTP/1.1" 200 -
+[21:22:30] INFO - 127.0.0.1 - - [20/Mar/2026 21:22:30] "GET / HTTP/1.1" 200 -
+[21:22:32] INFO - 127.0.0.1 - - [20/Mar/2026 21:22:32] "GET /faces HTTP/1.1" 200 -
+[21:22:34] INFO - 127.0.0.1 - - [20/Mar/2026 21:22:34] "GET /startup_info?lat=13.02783782313951&lon=80.27047103503025 HTTP/1.1" 200 -
+[21:23:04] INFO - CMD: 'how much?'
+[21:23:04] INFO - Semantic intent: 'currency' score=0.60
+[21:23:04] INFO - INTENT: currency
+[21:23:06] INFO - Running Gemini currency detection...
+[21:23:06] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:23:06] INFO - 127.0.0.1 - - [20/Mar/2026 21:23:06] "POST /process HTTP/1.1" 200 -
+[21:23:06] INFO - 127.0.0.1 - - [20/Mar/2026 21:23:06] "GET /memory HTTP/1.1" 200 -
+[21:23:28] INFO - 127.0.0.1 - - [20/Mar/2026 21:23:28] "GET / HTTP/1.1" 200 -
+[21:23:30] INFO - 127.0.0.1 - - [20/Mar/2026 21:23:30] "GET /faces HTTP/1.1" 200 -
+[21:23:31] INFO - 127.0.0.1 - - [20/Mar/2026 21:23:31] "GET /startup_info?lat=13.02783782313951&lon=80.27047103503025 HTTP/1.1" 200 -
+[21:24:00] INFO - CMD: 'read this.'
+[21:24:00] INFO - Semantic intent: 'ocr' score=0.87
+[21:24:00] INFO - INTENT: ocr
+[21:24:01] INFO - Running EasyOCR...
+[21:24:01] INFO - Loading EasyOCR model (first time, please wait)...
+[21:24:01] WARNING - Using CPU. Note: This module is much faster with a GPU.
+[21:24:01] ERROR - EasyOCR error: Tamil is only compatible with English, try lang_list=["ta","en"]
+[21:24:01] INFO - 127.0.0.1 - - [20/Mar/2026 21:24:01] "POST /process HTTP/1.1" 200 -
+[21:24:02] INFO - 127.0.0.1 - - [20/Mar/2026 21:24:02] "GET /memory HTTP/1.1" 200 -
+[21:25:12] INFO - 127.0.0.1 - - [20/Mar/2026 21:25:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:26:53] INFO - ==================================================
+[21:26:53] INFO -   WARMING UP ALL MODELS...
+[21:26:53] INFO - ==================================================
+[21:26:53] INFO - Loading BLIP...
+[21:26:53] INFO - Loading sentence-transformers...
+[21:26:53] INFO - Loading COCO YOLO...
+[21:26:53] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[21:26:53] INFO - [33mPress CTRL+C to quit[0m
+[21:26:53] INFO - COCO YOLO loaded OK
+[21:27:00] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:00] "GET / HTTP/1.1" 200 -
+[21:27:02] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:02] "GET /faces HTTP/1.1" 200 -
+[21:27:04] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:04] "GET /startup_info HTTP/1.1" 200 -
+[21:27:16] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:27:18] INFO - BLIP loaded OK
+[21:27:21] INFO - Intent model loaded OK
+[21:27:37] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:37] "GET / HTTP/1.1" 200 -
+[21:27:40] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:40] "GET /faces HTTP/1.1" 200 -
+[21:27:43] INFO - 127.0.0.1 - - [20/Mar/2026 21:27:43] "GET /startup_info?lat=13.02778882415038&lon=80.27047020307242 HTTP/1.1" 200 -
+[21:28:13] INFO - CMD: 'how much?'
+[21:28:13] INFO - Semantic intent: 'currency' score=0.60
+[21:28:13] INFO - INTENT: currency
+[21:28:15] INFO - Running Gemini currency detection...
+[21:28:15] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:28:15] INFO - 127.0.0.1 - - [20/Mar/2026 21:28:15] "POST /process HTTP/1.1" 200 -
+[21:28:16] INFO - 127.0.0.1 - - [20/Mar/2026 21:28:16] "GET /memory HTTP/1.1" 200 -
+[21:30:04] INFO - 127.0.0.1 - - [20/Mar/2026 21:30:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:30:56] INFO - ==================================================
+[21:30:56] INFO -   WARMING UP ALL MODELS...
+[21:30:56] INFO - ==================================================
+[21:30:56] INFO - Loading BLIP...
+[21:30:56] INFO - Loading sentence-transformers...
+[21:30:56] INFO - Loading COCO YOLO...
+[21:30:56] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.107:5000
+[21:30:56] INFO - [33mPress CTRL+C to quit[0m
+[21:30:57] INFO - COCO YOLO loaded OK
+[21:31:01] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:01] "GET / HTTP/1.1" 200 -
+[21:31:03] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:03] "GET /faces HTTP/1.1" 200 -
+[21:31:05] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:05] "GET /startup_info HTTP/1.1" 200 -
+[21:31:17] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:17] "GET / HTTP/1.1" 200 -
+[21:31:19] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:19] "GET /faces HTTP/1.1" 200 -
+[21:31:23] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:23] "GET /startup_info?lat=13.027886022775473&lon=80.27043606320264 HTTP/1.1" 200 -
+[21:31:30] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:31:31] INFO - BLIP loaded OK
+[21:31:37] INFO - Intent model loaded OK
+[21:31:51] INFO - CMD: 'how much?'
+[21:31:52] INFO - Semantic intent: 'currency' score=0.60
+[21:31:52] INFO - INTENT: currency
+[21:31:53] INFO - Running Gemini currency detection...
+[21:31:53] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:31:53] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:53] "POST /process HTTP/1.1" 200 -
+[21:31:54] INFO - 127.0.0.1 - - [20/Mar/2026 21:31:54] "GET /memory HTTP/1.1" 200 -
+[21:33:28] INFO - 127.0.0.1 - - [20/Mar/2026 21:33:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:34:40] INFO - 127.0.0.1 - - [20/Mar/2026 21:34:40] "GET /faces HTTP/1.1" 200 -
+[21:34:41] INFO - 127.0.0.1 - - [20/Mar/2026 21:34:41] "GET /startup_info HTTP/1.1" 200 -
+[21:34:57] INFO - CMD: 'how much?'
+[21:34:57] INFO - Semantic intent: 'currency' score=0.60
+[21:34:57] INFO - INTENT: currency
+[21:34:58] INFO - Running Gemini currency detection...
+[21:34:58] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:34:58] INFO - 127.0.0.1 - - [20/Mar/2026 21:34:58] "POST /process HTTP/1.1" 200 -
+[21:34:59] INFO - 127.0.0.1 - - [20/Mar/2026 21:34:59] "GET /memory HTTP/1.1" 200 -
+[21:37:00] INFO - 127.0.0.1 - - [20/Mar/2026 21:37:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:38:31] INFO - 127.0.0.1 - - [20/Mar/2026 21:38:31] "GET / HTTP/1.1" 200 -
+[21:38:32] INFO - 127.0.0.1 - - [20/Mar/2026 21:38:32] "GET /faces HTTP/1.1" 200 -
+[21:38:34] INFO - 127.0.0.1 - - [20/Mar/2026 21:38:34] "GET /startup_info HTTP/1.1" 200 -
+[21:38:59] INFO - 127.0.0.1 - - [20/Mar/2026 21:38:59] "GET / HTTP/1.1" 200 -
+[21:39:01] INFO - 127.0.0.1 - - [20/Mar/2026 21:39:01] "GET /faces HTTP/1.1" 200 -
+[21:39:03] INFO - 127.0.0.1 - - [20/Mar/2026 21:39:03] "GET /startup_info HTTP/1.1" 200 -
+[21:39:18] INFO - CMD: 'how much?'
+[21:39:18] INFO - Semantic intent: 'currency' score=0.60
+[21:39:18] INFO - INTENT: currency
+[21:39:19] INFO - Running Gemini currency detection...
+[21:39:19] ERROR - Gemini API error: 404 {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[21:39:19] INFO - 127.0.0.1 - - [20/Mar/2026 21:39:19] "POST /process HTTP/1.1" 200 -
+[21:39:20] INFO - 127.0.0.1 - - [20/Mar/2026 21:39:20] "GET /memory HTTP/1.1" 200 -

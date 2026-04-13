@@ -1,0 +1,175 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================
+   TITLE
+========================= */
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #00ffe1;
+    text-shadow: 0 0 10px rgba(0,255,225,0.5);
+}
+
+/* =========================
+   VIDEO FEED
+========================= */
+video {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0,255,200,0.3);
+    border: 2px solid rgba(0,255,200,0.2);
+}
+
+/* =========================
+   STATUS BOX
+========================= */
+.status-box {
+    margin: 15px 0;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* STATES */
+.status-box.idle {
+    background: rgba(255,255,255,0.1);
+}
+
+.status-box.listening {
+    background: #005eff;
+    box-shadow: 0 0 20px #005eff;
+    animation: pulse 1.5s infinite;
+}
+
+.status-box.processing {
+    background: #ff9800;
+    box-shadow: 0 0 20px #ff9800;
+}
+
+.status-box.result {
+    background: #00c853;
+    box-shadow: 0 0 20px #00c853;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 16px;
+    margin: 8px;
+    width: 45%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00ffe1, #00c4a7);
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffe1;
+}
+
+/* Active */
+button:active {
+    transform: scale(0.95);
+}
+
+/* =========================
+   VOICE INDICATOR DOT
+========================= */
+.voice-indicator {
+    margin-top: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #005eff; }
+    50% { box-shadow: 0 0 25px #005eff; }
+    100% { box-shadow: 0 0 10px #005eff; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+/* =========================
+   ACCESSIBILITY BOOST
+========================= */
+body {
+    letter-spacing: 0.5px;
+}
+
+.status-box {
+    line-height: 1.4;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .status-box {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,46 @@
+[21:48:34] INFO - ==================================================
+[21:48:34] INFO -   WARMING UP ALL MODELS...
+[21:48:34] INFO - ==================================================
+[21:48:34] INFO - Loading BLIP...
+[21:48:34] INFO - Loading sentence-transformers...
+[21:48:34] INFO - Loading COCO YOLO...
+[21:48:34] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+[21:48:34] INFO - [33mPress CTRL+C to quit[0m
+[21:48:34] INFO - COCO YOLO loaded OK
+[21:48:51] INFO - 192.168.0.105 - - [22/Mar/2026 21:48:51] "GET / HTTP/1.1" 200 -
+[21:48:51] INFO - 192.168.0.105 - - [22/Mar/2026 21:48:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:49:11] INFO - 127.0.0.1 - - [22/Mar/2026 21:49:11] "GET / HTTP/1.1" 200 -
+[21:49:12] INFO - 127.0.0.1 - - [22/Mar/2026 21:49:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[21:49:14] INFO - 127.0.0.1 - - [22/Mar/2026 21:49:14] "GET /faces HTTP/1.1" 200 -
+[21:49:16] INFO - 127.0.0.1 - - [22/Mar/2026 21:49:16] "GET /startup_info HTTP/1.1" 200 -
+[21:49:33] INFO - CMD: 'what is this?'
+[21:49:33] INFO - INTENT: scene
+[21:49:36] INFO - BLIP not ready, loading now...
+[21:49:36] INFO - Loading BLIP...
+[21:50:08] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[21:50:10] INFO - CMD: 'what is this?'
+[21:50:10] INFO - INTENT: scene
+[21:50:10] INFO - BLIP loaded OK
+[21:50:10] ERROR - BLIP error: Tensor on device cpu is not on the expected device meta!
+[21:50:11] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:11] "POST /process HTTP/1.1" 200 -
+[21:50:11] INFO - BLIP loaded OK
+[21:50:11] ERROR - BLIP error: Tensor on device cpu is not on the expected device meta!
+[21:50:12] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:12] "POST /process HTTP/1.1" 200 -
+[21:50:13] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:13] "GET /memory HTTP/1.1" 200 -
+[21:50:15] WARNING - Intent model failed: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.. Using keyword fallback.
+[21:50:23] INFO - CMD: 'what is this?'
+[21:50:23] INFO - INTENT: scene
+[21:50:24] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:24] "POST /process HTTP/1.1" 200 -
+[21:50:25] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:25] "GET /memory HTTP/1.1" 200 -
+[21:50:33] INFO - CMD: 'hello.'
+[21:50:33] INFO - INTENT: unknown
+[21:50:34] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:34] "POST /process HTTP/1.1" 200 -
+[21:50:34] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:34] "GET /memory HTTP/1.1" 200 -
+[21:50:44] INFO - CMD: 'ye.'
+[21:50:44] INFO - INTENT: unknown
+[21:50:44] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:44] "POST /process HTTP/1.1" 200 -
+[21:50:45] INFO - 127.0.0.1 - - [22/Mar/2026 21:50:45] "GET /memory HTTP/1.1" 200 -

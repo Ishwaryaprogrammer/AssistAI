@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="theme-color" content="#05070f"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<title>AssistAI v3</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#05070f;--panel:#0b0f1e;--border:rgba(100,160,255,0.12);
+  --accent:#3d8bff;--accent2:#7c5cff;--accent3:#00e5b0;
+  --warn:#ff6b3d;--danger:#ff3d3d;
+  --text:#d4e4ff;--muted:#4a5a7a;--glow:rgba(61,139,255,0.35);
+  --font-ui:'Syne',sans-serif;--font-mono:'Space Mono',monospace;
+  --radius:16px;--trans:cubic-bezier(0.23,1,0.32,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font-ui);
+     min-height:100vh;overflow-x:hidden;display:flex;flex-direction:column;align-items:center}
+body::before{content:'';position:fixed;inset:0;
+  background-image:linear-gradient(rgba(61,139,255,0.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(61,139,255,0.04) 1px,transparent 1px);
+  background-size:48px 48px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-40%;left:-20%;width:80vw;height:80vh;
+  background:radial-gradient(ellipse at center,rgba(61,139,255,0.08) 0%,transparent 70%);
+  pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1;width:100%;max-width:920px;
+      padding:20px 16px 80px;display:flex;flex-direction:column;gap:18px}
+
+/* HEADER */
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;
+       padding:14px 20px;background:var(--panel);border:1px solid var(--border);
+       border-radius:var(--radius);backdrop-filter:blur(12px)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+           border-radius:12px;display:flex;align-items:center;justify-content:center;
+           font-size:19px;animation:pulse-icon 3s ease-in-out infinite}
+@keyframes pulse-icon{0%,100%{box-shadow:0 0 20px var(--glow)}50%{box-shadow:0 0 40px rgba(61,139,255,0.6)}}
+.logo-text h1{font-size:1.2rem;font-weight:800;letter-spacing:-0.02em;line-height:1}
+.logo-text span{font-size:0.65rem;color:var(--muted);font-family:var(--font-mono);
+                letter-spacing:0.1em;text-transform:uppercase}
+.header-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.info-pills{display:flex;gap:6px;flex-wrap:wrap}
+.info-pill{display:flex;align-items:center;gap:4px;padding:4px 9px;border-radius:7px;
+           border:1px solid var(--border);font-family:var(--font-mono);font-size:0.63rem;
+           color:var(--muted);background:rgba(255,255,255,0.02)}
+.status-pill{display:flex;align-items:center;gap:7px;padding:6px 12px;border-radius:100px;
+             border:1px solid var(--border);font-family:var(--font-mono);font-size:0.68rem;
+             color:var(--muted);transition:all 0.4s var(--trans)}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--muted);transition:background 0.3s}
+.status-pill.active   .status-dot{background:var(--accent3);box-shadow:0 0 8px var(--accent3);animation:blink 1.5s ease-in-out infinite}
+.status-pill.active   {border-color:rgba(0,229,176,0.3);color:var(--accent3)}
+.status-pill.speaking .status-dot{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+.status-pill.speaking {border-color:rgba(255,107,61,0.3);color:var(--warn)}
+.status-pill.processing .status-dot{background:var(--accent);animation:blink 0.5s ease-in-out infinite}
+.status-pill.processing{border-color:rgba(61,139,255,0.3);color:var(--accent)}
+.status-pill.danger   .status-dot{background:var(--danger);animation:blink 0.4s ease-in-out infinite}
+.status-pill.danger   {border-color:rgba(255,61,61,0.4);color:var(--danger)}
+.status-pill.stopped  .status-dot{background:var(--muted)}
+.status-pill.stopped  {color:var(--muted)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+
+/* STATUS BANNER */
+.status-banner{padding:10px 20px;background:rgba(0,229,176,0.05);
+               border:1px solid rgba(0,229,176,0.2);border-radius:10px;
+               font-family:var(--font-mono);font-size:0.72rem;color:var(--accent3);
+               text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;
+               transition:all 0.4s var(--trans)}
+.status-banner.stopped{color:var(--muted);border-color:var(--border);background:rgba(255,255,255,0.02)}
+.status-banner.speaking{color:var(--warn);border-color:rgba(255,107,61,0.25);background:rgba(255,107,61,0.04)}
+.status-banner.processing{color:var(--accent);border-color:rgba(61,139,255,0.25);background:rgba(61,139,255,0.04)}
+.banner-dot{width:6px;height:6px;border-radius:50%;background:currentColor;animation:blink 1.5s ease-in-out infinite}
+
+/* DANGER */
+.danger-alert{display:none;padding:12px 18px;background:rgba(255,61,61,0.08);
+              border:1px solid rgba(255,61,61,0.3);border-radius:var(--radius);
+              color:#ff6b6b;font-size:0.88rem;font-weight:600;
+              align-items:center;gap:10px;animation:danger-pulse 1s ease-in-out infinite}
+.danger-alert.show{display:flex}
+@keyframes danger-pulse{0%,100%{background:rgba(255,61,61,0.08)}50%{background:rgba(255,61,61,0.16)}}
+
+/* GRID */
+.main-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:640px){.main-grid{grid-template-columns:1fr}}
+
+/* CAMERA */
+.camera-panel{position:relative;border-radius:var(--radius);overflow:hidden;
+              border:1px solid var(--border);aspect-ratio:4/3;background:#000}
+#video{width:100%;height:100%;object-fit:cover;display:block}
+.camera-overlay{position:absolute;inset:0;pointer-events:none}
+.camera-overlay::before,.camera-overlay::after{content:'';position:absolute;
+  width:26px;height:26px;border-color:var(--accent);border-style:solid}
+.camera-overlay::before{top:10px;left:10px;border-width:2px 0 0 2px;border-radius:4px 0 0 0}
+.camera-overlay::after{bottom:10px;right:10px;border-width:0 2px 2px 0;border-radius:0 0 4px 0}
+.camera-badge{position:absolute;top:10px;right:10px;background:rgba(5,7,15,0.8);
+              border:1px solid var(--border);border-radius:7px;padding:3px 9px;
+              font-family:var(--font-mono);font-size:0.63rem;color:var(--accent3);backdrop-filter:blur(8px)}
+.scan-line{position:absolute;left:0;right:0;height:2px;
+           background:linear-gradient(90deg,transparent,var(--accent),transparent);
+           opacity:0;top:0;pointer-events:none}
+.scan-line.active{opacity:0.7;animation:scan 1.8s ease-in-out}
+@keyframes scan{0%{top:0%;opacity:0.7}100%{top:100%;opacity:0}}
+canvas{display:none}
+
+/* OUTPUT */
+.output-panel{border-radius:var(--radius);border:1px solid var(--border);
+              background:var(--panel);display:flex;flex-direction:column;overflow:hidden}
+.output-header{padding:12px 17px;border-bottom:1px solid var(--border);display:flex;
+               align-items:center;justify-content:space-between;font-size:0.68rem;
+               font-family:var(--font-mono);color:var(--muted);text-transform:uppercase;letter-spacing:0.1em}
+.output-dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.output-body{flex:1;padding:17px;display:flex;flex-direction:column;justify-content:center;min-height:155px}
+#response-text{font-size:0.93rem;line-height:1.72;color:var(--text);transition:opacity 0.3s;word-break:break-word}
+#response-text.loading{opacity:0.35;font-style:italic}
+.intent-tag{display:inline-block;margin-top:10px;padding:3px 9px;border-radius:5px;
+            font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.08em;
+            text-transform:uppercase;background:rgba(61,139,255,0.12);color:var(--accent);
+            border:1px solid rgba(61,139,255,0.2)}
+.intent-tag[data-intent="face"]{background:rgba(124,92,255,0.12);color:var(--accent2);border-color:rgba(124,92,255,0.2)}
+.intent-tag[data-intent="ocr"]{background:rgba(0,229,176,0.1);color:var(--accent3);border-color:rgba(0,229,176,0.2)}
+.intent-tag[data-intent="currency"]{background:rgba(255,200,50,0.1);color:#ffc832;border-color:rgba(255,200,50,0.2)}
+.intent-tag[data-intent="location"],.intent-tag[data-intent="weather"]{background:rgba(255,107,61,0.1);color:var(--warn);border-color:rgba(255,107,61,0.2)}
+.intent-tag[data-intent="danger"]{background:rgba(255,61,61,0.1);color:var(--danger);border-color:rgba(255,61,61,0.2)}
+
+/* MIC SECTION */
+.mic-section{display:flex;flex-direction:column;align-items:center;gap:14px;
+             padding:22px 18px;border-radius:var(--radius);border:1px solid var(--border);
+             background:var(--panel);grid-column:1/-1}
+.mic-ring-wrap{position:relative;width:86px;height:86px;display:flex;align-items:center;justify-content:center}
+.mic-ring{position:absolute;inset:0;border-radius:50%;border:2px solid transparent;transition:all 0.4s var(--trans)}
+.mic-ring-1{border-color:rgba(61,139,255,0.15)}
+.mic-ring-2{inset:-12px;border-color:rgba(61,139,255,0.08)}
+.mic-ring-3{inset:-24px;border-color:rgba(61,139,255,0.04)}
+.mic-center{width:60px;height:60px;border-radius:50%;
+            background:linear-gradient(135deg,rgba(61,139,255,0.15),rgba(124,92,255,0.15));
+            border:2px solid var(--border);display:flex;align-items:center;justify-content:center;
+            font-size:24px;transition:all 0.4s var(--trans);position:relative;z-index:1}
+.mic-ring-wrap.listening .mic-ring-1{border-color:rgba(61,139,255,0.6);animation:rp 1.5s ease-in-out infinite}
+.mic-ring-wrap.listening .mic-ring-2{border-color:rgba(61,139,255,0.3);animation:rp 1.5s ease-in-out infinite 0.3s}
+.mic-ring-wrap.listening .mic-ring-3{border-color:rgba(61,139,255,0.15);animation:rp 1.5s ease-in-out infinite 0.6s}
+.mic-ring-wrap.listening .mic-center{background:linear-gradient(135deg,rgba(61,139,255,0.4),rgba(124,92,255,0.4));
+  border-color:var(--accent);box-shadow:0 0 30px var(--glow)}
+.mic-ring-wrap.speaking .mic-ring-1{border-color:rgba(255,107,61,0.6);animation:rp 0.8s ease-in-out infinite}
+.mic-ring-wrap.speaking .mic-ring-2{border-color:rgba(255,107,61,0.3);animation:rp 0.8s ease-in-out infinite 0.2s}
+.mic-ring-wrap.speaking .mic-ring-3{border-color:rgba(255,107,61,0.15);animation:rp 0.8s ease-in-out infinite 0.4s}
+.mic-ring-wrap.speaking .mic-center{background:linear-gradient(135deg,rgba(255,107,61,0.3),rgba(255,150,50,0.3));
+  border-color:var(--warn);box-shadow:0 0 30px rgba(255,107,61,0.3)}
+.mic-ring-wrap.processing .mic-center{background:linear-gradient(135deg,rgba(0,229,176,0.2),rgba(61,139,255,0.2));
+  border-color:var(--accent3);animation:spin-glow 1.2s linear infinite}
+.mic-ring-wrap.stopped .mic-center{background:rgba(255,255,255,0.04);border-color:var(--border)}
+@keyframes rp{0%,100%{opacity:0.6;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+@keyframes spin-glow{0%{box-shadow:0 0 0 0 rgba(0,229,176,0.4)}50%{box-shadow:0 0 20px 4px rgba(0,229,176,0.2)}100%{box-shadow:0 0 0 0 rgba(0,229,176,0)}}
+
+.waveform{display:flex;gap:3px;align-items:center;height:26px}
+.bar{width:3px;height:4px;background:var(--accent);border-radius:2px}
+.waveform.active .bar:nth-child(1){animation:wave 0.9s ease-in-out infinite 0s}
+.waveform.active .bar:nth-child(2){animation:wave 0.9s ease-in-out infinite 0.1s}
+.waveform.active .bar:nth-child(3){animation:wave 0.9s ease-in-out infinite 0.2s}
+.waveform.active .bar:nth-child(4){animation:wave 0.9s ease-in-out infinite 0.3s}
+.waveform.active .bar:nth-child(5){animation:wave 0.9s ease-in-out infinite 0.4s}
+.waveform.active .bar:nth-child(6){animation:wave 0.9s ease-in-out infinite 0.3s}
+.waveform.active .bar:nth-child(7){animation:wave 0.9s ease-in-out infinite 0.2s}
+.waveform.active .bar:nth-child(8){animation:wave 0.9s ease-in-out infinite 0.1s}
+@keyframes wave{0%,100%{height:4px}50%{height:20px}}
+
+#heard-text{font-family:var(--font-mono);font-size:0.76rem;color:var(--muted);padding:7px 15px;
+            border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid var(--border);
+            min-height:34px;display:flex;align-items:center;justify-content:center;
+            transition:all 0.3s;word-break:break-word;max-width:480px;text-align:center}
+#heard-text.active{color:var(--text);border-color:rgba(61,139,255,0.3);background:rgba(61,139,255,0.06)}
+
+/* COMMANDS */
+.commands-section,.faces-panel,.memory-panel{border-radius:var(--radius);
+  border:1px solid var(--border);background:var(--panel);padding:17px}
+.section-title{font-size:0.68rem;font-family:var(--font-mono);color:var(--muted);
+               text-transform:uppercase;letter-spacing:0.12em;margin-bottom:13px;
+               display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';width:18px;height:1px;background:var(--muted)}
+.cmd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:8px}
+.cmd-item{padding:8px 12px;border-radius:9px;border:1px solid var(--border);
+          background:rgba(255,255,255,0.02);transition:all 0.2s var(--trans)}
+.cmd-item:hover{border-color:rgba(61,139,255,0.3);background:rgba(61,139,255,0.06)}
+.cmd-label{font-family:var(--font-mono);font-size:0.67rem;color:var(--accent);margin-bottom:2px}
+.cmd-desc{font-size:0.68rem;color:var(--muted);line-height:1.4}
+
+/* FACES */
+.faces-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px;min-height:32px}
+.face-tag{padding:3px 11px;border-radius:100px;border:1px solid rgba(124,92,255,0.3);
+          background:rgba(124,92,255,0.08);font-size:0.71rem;color:var(--accent2);
+          font-family:var(--font-mono);display:flex;align-items:center;gap:5px}
+.face-tag-del{cursor:pointer;opacity:0.4;font-size:0.78rem;transition:opacity 0.2s}
+.face-tag-del:hover{opacity:1;color:var(--warn)}
+.no-faces{font-size:0.71rem;color:var(--muted);font-family:var(--font-mono)}
+
+/* MEMORY */
+.memory-list{display:flex;flex-direction:column;gap:5px;max-height:170px;overflow-y:auto;margin-top:11px}
+.memory-item{padding:7px 11px;border-radius:7px;background:rgba(255,255,255,0.02);
+             border:1px solid var(--border);font-size:0.7rem}
+.memory-cmd{color:var(--accent);font-family:var(--font-mono);font-size:0.65rem}
+.memory-resp{color:var(--muted);margin-top:2px;line-height:1.4}
+
+/* TOAST */
+#toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);
+       background:var(--panel);border:1px solid var(--border);border-radius:11px;
+       padding:10px 17px;font-size:0.78rem;font-family:var(--font-mono);color:var(--text);
+       opacity:0;transition:all 0.4s var(--trans);pointer-events:none;z-index:100;
+       white-space:nowrap;backdrop-filter:blur(12px)}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* PERMISSION OVERLAY */
+#perm-overlay{position:fixed;inset:0;background:rgba(5,7,15,0.97);z-index:200;
+  display:flex;align-items:center;justify-content:center;
+  backdrop-filter:blur(8px);transition:opacity 0.5s}
+#perm-overlay.hidden{opacity:0;pointer-events:none}
+.perm-box{background:var(--panel);border:1px solid var(--border);border-radius:20px;
+          padding:36px;max-width:355px;text-align:center;
+          display:flex;flex-direction:column;align-items:center;gap:14px}
+.perm-icon{font-size:44px}
+.perm-box h2{font-size:1.22rem;font-weight:800}
+.perm-box p{font-size:0.79rem;color:var(--muted);line-height:1.6}
+.btn-start{padding:13px 28px;border-radius:12px;border:none;
+           background:linear-gradient(135deg,var(--accent),var(--accent2));
+           color:#fff;font-family:var(--font-ui);font-size:0.87rem;font-weight:700;
+           cursor:pointer;transition:all 0.3s var(--trans);box-shadow:0 8px 24px rgba(61,139,255,0.3)}
+.btn-start:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(61,139,255,0.45)}
+
+footer{text-align:center;font-family:var(--font-mono);font-size:0.6rem;
+       color:var(--muted);padding-top:8px;letter-spacing:0.06em}
+</style>
+</head>
+<body>
+
+<div id="perm-overlay">
+  <div class="perm-box">
+    <div class="perm-icon">👁️</div>
+    <h2>AssistAI v3</h2>
+    <p>Needs <strong>microphone</strong>, <strong>camera</strong> and <strong>location</strong>.<br/><br/>
+    Just speak your command directly — no wake word needed.<br/>
+    Say <em>"stop"</em> to pause listening.</p>
+    <button class="btn-start" onclick="initSystem()">Start System</button>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <div class="logo-icon">👁️</div>
+      <div class="logo-text">
+        <h1>AssistAI</h1>
+        <span>Vision Assistant v3</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="info-pills">
+        <div class="info-pill">🔋 <span id="battery-val">--</span></div>
+        <div class="info-pill">🌤 <span id="weather-val">--</span></div>
+      </div>
+      <div class="status-pill" id="status-pill">
+        <div class="status-dot"></div>
+        <span id="status-label">Starting...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATUS BANNER — replaces wake word banner -->
+  <div class="status-banner" id="status-banner">
+    <div class="banner-dot"></div>
+    <span id="banner-label">Listening — speak your command</span>
+  </div>
+
+  <div class="danger-alert" id="danger-alert">
+    <span>⚠️</span><span id="danger-text">Warning!</span>
+  </div>
+
+  <div class="main-grid">
+    <div class="camera-panel">
+      <video id="video" autoplay muted playsinline></video>
+      <div class="camera-overlay"></div>
+      <div class="camera-badge">📷 LIVE</div>
+      <div class="scan-line" id="scan-line"></div>
+    </div>
+
+    <div class="output-panel">
+      <div class="output-header">
+        <span>System Response</span>
+        <div class="output-dot"></div>
+      </div>
+      <div class="output-body">
+        <div id="response-text">Initializing...</div>
+        <div class="intent-tag" id="intent-tag" data-intent="none" style="display:none"></div>
+      </div>
+    </div>
+
+    <div class="mic-section">
+      <div class="mic-ring-wrap listening" id="mic-wrap">
+        <div class="mic-ring mic-ring-3"></div>
+        <div class="mic-ring mic-ring-2"></div>
+        <div class="mic-ring mic-ring-1"></div>
+        <div class="mic-center">🎤</div>
+      </div>
+      <div class="waveform active" id="waveform">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div>
+      </div>
+      <div id="heard-text">Listening...</div>
+    </div>
+  </div>
+
+  <div class="commands-section">
+    <div class="section-title">Voice Commands</div>
+    <div class="cmd-grid">
+      <div class="cmd-item"><div class="cmd-label">"what is this"</div><div class="cmd-desc">Describe the scene</div></div>
+      <div class="cmd-item"><div class="cmd-label">"read this"</div><div class="cmd-desc">Read text (Surya OCR)</div></div>
+      <div class="cmd-item"><div class="cmd-label">"how much"</div><div class="cmd-desc">Indian currency </div></div>
+      <div class="cmd-item"><div class="cmd-label">"what objects"</div><div class="cmd-desc">List visible objects</div></div>
+      <div class="cmd-item"><div class="cmd-label">"who am I"</div><div class="cmd-desc">Face + emotion + age</div></div>
+      <div class="cmd-item"><div class="cmd-label">"register face"</div><div class="cmd-desc">Save face to memory</div></div>
+      <div class="cmd-item"><div class="cmd-label">"what color"</div><div class="cmd-desc">Detect dominant color</div></div>
+      <div class="cmd-item"><div class="cmd-label">"how far"</div><div class="cmd-desc">Distance to nearest object</div></div>
+      <div class="cmd-item"><div class="cmd-label">"where is the light"</div><div class="cmd-desc">Light source direction</div></div>
+      <div class="cmd-item"><div class="cmd-label">"where am I"</div><div class="cmd-desc">GPS address</div></div>
+      <div class="cmd-item"><div class="cmd-label">"what's the weather"</div><div class="cmd-desc">Current weather</div></div>
+      <div class="cmd-item"><div class="cmd-label">"what time is it"</div><div class="cmd-desc">Current time</div></div>
+      <div class="cmd-item"><div class="cmd-label">"good morning"</div><div class="cmd-desc">Daily briefing</div></div>
+      <div class="cmd-item"><div class="cmd-label">"speak faster/slower"</div><div class="cmd-desc">Adjust speech speed</div></div>
+      <div class="cmd-item"><div class="cmd-label">"again"</div><div class="cmd-desc">Repeat last answer</div></div>
+      <div class="cmd-item"><div class="cmd-label">"stop"</div><div class="cmd-desc">Pause listening</div></div>
+    </div>
+  </div>
+
+  <div class="faces-panel">
+    <div class="section-title">Registered Faces</div>
+    <div class="faces-list" id="faces-list">
+      <span class="no-faces">No faces registered yet</span>
+    </div>
+  </div>
+
+  <div class="memory-panel">
+    <div class="section-title">Conversation Memory</div>
+    <div class="memory-list" id="memory-list">
+      <span class="no-faces">No commands yet</span>
+    </div>
+  </div>
+
+  <footer>ASSISTAI v3 — ALWAYS LISTENING — GEMINI CURRENCY — SURYA OCR</footer>
+</div>
+
+<div id="toast"></div>
+
+
+<script>
+// ═══════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════
+let recognition  = null;
+let speaking     = false;
+let processing   = false;
+let stopped      = false;   // true when user says "stop"
+let lastLocation = null;
+let speechRate   = 0.82;
+let gracePeriod  = false;
+let dangerTimer  = null;
+
+const video       = document.getElementById("video");
+const canvas      = document.getElementById("canvas");
+const statusPill  = document.getElementById("status-pill");
+const statusLabel = document.getElementById("status-label");
+const responseEl  = document.getElementById("response-text");
+const intentTag   = document.getElementById("intent-tag");
+const heardEl     = document.getElementById("heard-text");
+const micWrap     = document.getElementById("mic-wrap");
+const waveform    = document.getElementById("waveform");
+const scanLine    = document.getElementById("scan-line");
+const facesList   = document.getElementById("faces-list");
+const statusBanner= document.getElementById("status-banner");
+const bannerLabel = document.getElementById("banner-label");
+const dangerAlert = document.getElementById("danger-alert");
+const dangerText  = document.getElementById("danger-text");
+const memoryList  = document.getElementById("memory-list");
+
+// ═══════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════
+async function initSystem() {
+  document.getElementById("perm-overlay").classList.add("hidden");
+  setStatus("starting","Starting...");
+
+  // Camera
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({video:true, audio:false});
+    video.srcObject = stream;
+    await new Promise(r => { video.onloadedmetadata = r; });
+  } catch(e) {
+    setStatus("error","Camera denied");
+    speak("Camera access was denied. Please allow camera permission and reload.");
+    return;
+  }
+
+  // GPS
+  navigator.geolocation.watchPosition(
+    pos => { lastLocation = {lat:pos.coords.latitude, lon:pos.coords.longitude}; },
+    () => {},
+    {enableHighAccuracy:true, maximumAge:10000}
+  );
+
+  // Battery
+  if (navigator.getBattery) {
+    navigator.getBattery().then(bat => {
+      updateBattery(bat);
+      bat.addEventListener("levelchange",   () => updateBattery(bat));
+      bat.addEventListener("chargingchange",() => updateBattery(bat));
+    }).catch(()=>{});
+  }
+
+  // Voices
+  speechSynthesis.getVoices();
+  if (speechSynthesis.onvoiceschanged !== undefined)
+    speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+
+  // TTS fix
+  document.addEventListener("click",            () => speechSynthesis.resume());
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && speaking) speechSynthesis.resume(); });
+
+  loadFaces();
+
+  // Wait for GPS then load startup briefing
+  await new Promise(r => setTimeout(r, 1500));
+  loadStartupInfo();
+}
+
+function updateBattery(bat) {
+  const pct  = Math.round(bat.level * 100);
+  const icon = bat.charging ? "⚡" : pct > 50 ? "🔋" : pct > 20 ? "🪫" : "⚠️";
+  document.getElementById("battery-val").textContent = icon + " " + pct + "%";
+  if (pct <= 20 && !bat.charging) showToast("Battery low: " + pct + "%");
+}
+
+async function loadStartupInfo() {
+  try {
+    let url = "/startup_info";
+    if (lastLocation) url += `?lat=${lastLocation.lat}&lon=${lastLocation.lon}`;
+    const res  = await fetch(url);
+    const data = await res.json();
+    if (data.weather) {
+      const w = data.weather.replace("Current weather: ","").split(".")[0];
+      document.getElementById("weather-val").textContent = w;
+    }
+    // Speak greeting then start listening
+    speak(data.briefing || "System ready. You can speak now.", "briefing", () => {
+      startListening();
+    });
+  } catch(e) {
+    speak("System ready. You can speak now.", null, () => {
+      startListening();
+    });
+  }
+}
+
+// ═══════════════════════════════════════════
+// CORE: START LISTENING — always loops back here
+// No wake word. Just listen, process, repeat.
+// ═══════════════════════════════════════════
+function startListening() {
+  if (speaking || processing || gracePeriod || stopped) return;
+
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    updateResponse("Speech recognition not supported. Please use Chrome.", "error");
+    return;
+  }
+
+  recognition = new SR();
+  recognition.continuous     = false;   // one utterance at a time — more reliable
+  recognition.interimResults = true;
+  recognition.lang           = "en-IN";
+  recognition.maxAlternatives = 3;
+
+  let finalText = "";
+
+  recognition.onstart = () => {
+    setStatus("active","Listening");
+    setBanner("listening","Listening — speak your command");
+    heardEl.textContent = "Listening...";
+    heardEl.classList.remove("active");
+  };
+
+  recognition.onresult = async e => {
+    let interim = "";
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const t = e.results[i][0].transcript;
+      if (e.results[i].isFinal) finalText = t;
+      else interim = t;
+    }
+    if (interim) heardEl.textContent = `"${interim}"`;
+
+    if (finalText && !speaking && !processing) {
+      heardEl.textContent = `"${finalText}"`;
+      heardEl.classList.add("active");
+      await handleCommand(finalText);
+    }
+  };
+
+  recognition.onerror = e => {
+    console.warn("Speech recognition error:", e.error);
+    if (e.error === "not-allowed") {
+      updateResponse("Microphone permission denied. Please allow microphone access in Chrome and reload.", "error");
+      setStatus("error","Mic denied");
+      setBanner("stopped","Microphone permission denied — reload page");
+      return;  // only case where we don't restart
+    }
+    // ALL other errors (no-speech, network, aborted, audio-capture, etc.)
+    // just restart quietly after a short delay
+    if (!speaking && !processing && !stopped && !gracePeriod)
+      setTimeout(() => startListening(), 400);
+  };
+
+  recognition.onend = () => {
+    // Restart unless stopped/speaking/processing
+    if (!speaking && !processing && !stopped && !gracePeriod)
+      setTimeout(() => startListening(), 300);
+  };
+
+  try { recognition.start(); }
+  catch(e) {
+    console.warn("recognition.start() error:", e);
+    setTimeout(() => startListening(), 1000);
+  }
+}
+
+// ═══════════════════════════════════════════
+// HANDLE COMMAND
+// ═══════════════════════════════════════════
+async function handleCommand(cmd) {
+  if (speaking || processing) return;
+
+  // Stop listening
+  if (recognition) { try { recognition.stop(); } catch(e){} recognition = null; }
+
+  const cmdLower = cmd.toLowerCase().trim();
+
+  // STOP command — pause listening
+  if (["stop","sleep","goodbye","pause","quiet"].some(w => cmdLower.includes(w))) {
+    stopped = true;
+    setBanner("stopped","Paused — reload the page to restart");
+    speak("Okay, stopping. Reload the page to start again.", "sleep", () => {
+      setStatus("stopped","Stopped");
+      micWrap.className = "mic-ring-wrap stopped";
+      waveform.className = "waveform";
+    });
+    return;
+  }
+
+  processing = true;
+  setStatus("processing","Processing...");
+  setBanner("processing","Processing your command...");
+  micWrap.className = "mic-ring-wrap processing";
+  waveform.className = "waveform";
+  responseEl.classList.add("loading");
+  responseEl.textContent = "Processing...";
+  intentTag.style.display = "none";
+
+  // ── safeSpeak: always restarts listening after speaking ──
+  // Used for ALL responses — success, error, warning, everything
+  function safeSpeak(msg, intent) {
+    processing = false;
+    speak(msg, intent, () => {
+      if (!stopped) startListening();
+    });
+  }
+
+  try {
+    const img = await captureFrame();
+    const fd  = new FormData();
+    fd.append("command", cmd);
+    fd.append("image",   img);
+    if (lastLocation) {
+      fd.append("lat", lastLocation.lat);
+      fd.append("lon", lastLocation.lon);
+    }
+
+    const res = await fetch("/process", {
+      method:"POST", body:fd,
+      signal: AbortSignal.timeout(28000)
+    });
+
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+
+    // Speech rate
+    if (data.rate_change === "faster") { speechRate = Math.min(speechRate + 0.15, 1.5); showToast("Speaking faster"); }
+    if (data.rate_change === "slower") { speechRate = Math.max(speechRate - 0.15, 0.5); showToast("Speaking slower"); }
+
+    // Danger alert
+    if (data.intent === "danger" || (data.msg||"").toLowerCase().startsWith("warning"))
+      showDangerAlert(data.msg);
+
+    // Faces + memory refresh
+    if (data.intent === "register_complete") setTimeout(loadFaces, 500);
+    setTimeout(loadMemory, 600);
+
+    // Sleep intent from backend
+    if (data.intent === "sleep") {
+      stopped = true;
+      speak(data.msg, "sleep", () => {
+        setStatus("stopped","Stopped");
+        setBanner("stopped","Paused — reload to restart");
+        micWrap.className = "mic-ring-wrap stopped";
+        waveform.className = "waveform";
+      });
+      return;
+    }
+
+    // All other intents — speak then loop back
+    safeSpeak(data.msg || "No response.", data.intent);
+
+  } catch(err) {
+    console.error("handleCommand error:", err);
+    let msg = "Something went wrong. Listening again.";
+    if (err.name === "TimeoutError")
+      msg = "The request timed out. Please try again.";
+    else if (err.message && err.message.includes("HTTP"))
+      msg = "Server error. Please try again.";
+    safeSpeak(msg, "error");
+  }
+}
+
+// ═══════════════════════════════════════════
+// CAMERA
+// ═══════════════════════════════════════════
+function captureFrame() {
+  return new Promise(resolve => {
+    canvas.width  = video.videoWidth  || 640;
+    canvas.height = video.videoHeight || 480;
+    canvas.getContext("2d").drawImage(video, 0, 0);
+    canvas.toBlob(resolve, "image/jpeg", 0.92);
+  });
+}
+
+// ═══════════════════════════════════════════
+// SPEECH — callback-based, chunk streaming
+// ═══════════════════════════════════════════
+function speak(text, intent, onDone) {
+  speaking    = true;
+  gracePeriod = false;
+  if (recognition) { try { recognition.stop(); } catch(e){} recognition = null; }
+
+  setStatus("speaking","Speaking...");
+  setBanner("speaking","Speaking...");
+  micWrap.className  = "mic-ring-wrap speaking";
+  waveform.className = "waveform";
+  updateResponse(text, intent);
+  speechSynthesis.cancel();
+
+  // Chunk long text
+  const words  = text.split(" ");
+  const CHUNK  = 25;
+  const chunks = [];
+  for (let i = 0; i < words.length; i += CHUNK)
+    chunks.push(words.slice(i, i + CHUNK).join(" "));
+
+  let idx = 0;
+  function next() {
+    if (idx >= chunks.length) {
+      speaking    = false;
+      processing  = false;
+      gracePeriod = true;
+      heardEl.classList.remove("active");
+      // Scan line
+      scanLine.className = "scan-line";
+      void scanLine.offsetWidth;
+      scanLine.className = "scan-line active";
+      // Grace period — 550ms prevents mic picking up own voice
+      setTimeout(() => {
+        gracePeriod = false;
+        if (onDone) onDone();
+      }, 550);
+      return;
+    }
+    const utt = new SpeechSynthesisUtterance(chunks[idx]);
+    utt.rate  = speechRate;
+    utt.pitch = 1.0;
+    utt.lang  = "en-IN";
+    const voices = speechSynthesis.getVoices();
+    const pref   = voices.find(v =>
+      v.lang.startsWith("en") && (v.name.includes("Google") || v.name.includes("Female"))
+    );
+    if (pref) utt.voice = pref;
+    utt.onend   = () => { idx++; next(); };
+    utt.onerror = (err) => {
+      console.warn("TTS error:", err);
+      idx = chunks.length; // skip remaining chunks
+      next(); // still triggers onDone → startListening
+    };
+    speechSynthesis.speak(utt);
+  }
+  next();
+}
+
+// ═══════════════════════════════════════════
+// UI HELPERS
+// ═══════════════════════════════════════════
+function setStatus(state, label) {
+  statusPill.className = "status-pill";
+  if (!["idle","starting","error"].includes(state)) statusPill.classList.add(state);
+  statusLabel.textContent = label;
+  micWrap.className  = "mic-ring-wrap " + (
+    state === "active"      ? "listening"  :
+    state === "speaking"    ? "speaking"   :
+    state === "processing"  ? "processing" :
+    state === "stopped"     ? "stopped"    : "listening"
+  );
+  waveform.className = "waveform" + (state === "active" ? " active" : "");
+}
+
+function setBanner(type, label) {
+  statusBanner.className = "status-banner" + (
+    type === "stopped"    ? " stopped"    :
+    type === "speaking"   ? " speaking"   :
+    type === "processing" ? " processing" : ""
+  );
+  bannerLabel.textContent = label;
+}
+
+function updateResponse(text, intent) {
+  responseEl.textContent = text;
+  responseEl.classList.remove("loading");
+  if (intent) {
+    intentTag.style.display  = "inline-block";
+    intentTag.textContent    = intent.replace(/_/g," ").toUpperCase();
+    intentTag.dataset.intent = intent;
+  } else {
+    intentTag.style.display = "none";
+  }
+}
+
+function showDangerAlert(msg) {
+  dangerText.textContent = msg;
+  dangerAlert.classList.add("show");
+  clearTimeout(dangerTimer);
+  dangerTimer = setTimeout(() => dangerAlert.classList.remove("show"), 8000);
+}
+
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 3000);
+}
+
+// ═══════════════════════════════════════════
+// FACES + MEMORY
+// ═══════════════════════════════════════════
+async function loadFaces() {
+  try {
+    const data = await fetch("/faces").then(r => r.json());
+    if (!data.faces || !data.faces.length) {
+      facesList.innerHTML = '<span class="no-faces">No faces registered yet</span>';
+      return;
+    }
+    facesList.innerHTML = data.faces.map(n => `
+      <div class="face-tag">
+        👤 ${n}
+        <span class="face-tag-del" onclick="deleteFace('${n}')">✕</span>
+      </div>`).join("");
+  } catch(e){}
+}
+
+async function deleteFace(name) {
+  try {
+    await fetch("/faces/" + name.replace(/ /g,"_"), {method:"DELETE"});
+    showToast(name + " removed");
+    loadFaces();
+  } catch(e){ showToast("Could not remove face"); }
+}
+
+async function loadMemory() {
+  try {
+    const data  = await fetch("/memory").then(r => r.json());
+    const items = (data.memory || []).slice().reverse().slice(0, 6);
+    if (!items.length) {
+      memoryList.innerHTML = '<span class="no-faces">No commands yet</span>';
+      return;
+    }
+    memoryList.innerHTML = items.map(m => `
+      <div class="memory-item">
+        <div class="memory-cmd">"${m.cmd || ""}"</div>
+        <div class="memory-resp">${(m.response||"").slice(0,90)}${(m.response||"").length>90?"...":""}</div>
+      </div>`).join("");
+  } catch(e){}
+} 
+</script>
+</body>
+</html>

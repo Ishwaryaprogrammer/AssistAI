@@ -1,0 +1,18 @@
+{
+  "face_db": "faces",
+  "log_dir": "logs",
+  "confidence_threshold": 0.55,
+  "currency_threshold": 0.60,
+  "danger_threshold": 0.50,
+  "multi_frame_count": 5,
+  "image_cache_seconds": 2,
+  "repeat_limit": 3,
+  "danger_classes": ["knife", "scissors", "fire", "stairs", "step"],
+  "blip_model": "Salesforce/blip-image-captioning-base",
+  "intent_model": "all-MiniLM-L6-v2",
+  "currency_weights": "model/yolov4-custom_best.weights",
+  "currency_cfg": "model/yolov4-custom.cfg",
+  "coco_weights": "model_coco/yolov3.weights",
+  "coco_cfg": "model_coco/yolov3.cfg",
+  "coco_names": "model_coco/coco.names"
+}

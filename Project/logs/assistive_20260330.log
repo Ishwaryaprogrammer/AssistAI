@@ -1,0 +1,542 @@
+[10:59:04] INFO - ==================================================
+[10:59:04] INFO -   WARMING UP ALL MODELS...
+[10:59:04] INFO - ==================================================
+[10:59:04] INFO - Loading BLIP...
+[10:59:04] INFO - Loading sentence-transformers...
+[10:59:04] INFO - Loading COCO YOLO...
+[10:59:05] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.19.11:5000
+[10:59:05] INFO - [33mPress CTRL+C to quit[0m
+[10:59:05] INFO - COCO YOLO loaded OK
+[10:59:22] INFO - 127.0.0.1 - - [30/Mar/2026 10:59:22] "GET / HTTP/1.1" 200 -
+[10:59:23] INFO - 127.0.0.1 - - [30/Mar/2026 10:59:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[10:59:27] INFO - 127.0.0.1 - - [30/Mar/2026 10:59:27] "GET /faces HTTP/1.1" 200 -
+[10:59:30] INFO - 127.0.0.1 - - [30/Mar/2026 10:59:30] "GET /startup_info?lat=12.921484&lon=80.240059 HTTP/1.1" 200 -
+[11:00:43] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[11:00:44] INFO - BLIP loaded OK
+[11:00:50] INFO - Intent model loaded OK
+[11:00:58] INFO - 127.0.0.1 - - [30/Mar/2026 11:00:58] "GET / HTTP/1.1" 200 -
+[11:01:01] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:01] "GET /faces HTTP/1.1" 200 -
+[11:01:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:02] "GET /startup_info?lat=12.921484&lon=80.240059 HTTP/1.1" 200 -
+[11:01:31] INFO - CMD: 'what is this?'
+[11:01:31] INFO - Semantic intent: 'scene' score=0.77
+[11:01:31] INFO - INTENT: scene
+[11:01:36] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:36] "POST /process HTTP/1.1" 200 -
+[11:01:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:37] "GET /memory HTTP/1.1" 200 -
+[11:01:45] INFO - CMD: 'what is this?'
+[11:01:45] INFO - Semantic intent: 'scene' score=0.77
+[11:01:45] INFO - INTENT: scene
+[11:01:49] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:49] "POST /process HTTP/1.1" 200 -
+[11:01:49] INFO - 127.0.0.1 - - [30/Mar/2026 11:01:49] "GET /memory HTTP/1.1" 200 -
+[11:01:58] INFO - CMD: 'what is this?'
+[11:01:58] INFO - Semantic intent: 'scene' score=0.77
+[11:01:58] INFO - INTENT: scene
+[11:02:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:02:02] "POST /process HTTP/1.1" 200 -
+[11:02:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:02:02] "GET /memory HTTP/1.1" 200 -
+[11:02:30] INFO - 127.0.0.1 - - [30/Mar/2026 11:02:30] "GET / HTTP/1.1" 200 -
+[11:05:21] INFO - 127.0.0.1 - - [30/Mar/2026 11:05:21] "GET /faces HTTP/1.1" 200 -
+[11:05:22] INFO - 127.0.0.1 - - [30/Mar/2026 11:05:22] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:05:53] INFO - CMD: 'what is this?'
+[11:05:53] INFO - Semantic intent: 'scene' score=0.77
+[11:05:53] INFO - INTENT: scene
+[11:05:56] INFO - 127.0.0.1 - - [30/Mar/2026 11:05:56] "POST /process HTTP/1.1" 200 -
+[11:05:57] INFO - 127.0.0.1 - - [30/Mar/2026 11:05:57] "GET /memory HTTP/1.1" 200 -
+[11:06:03] INFO - CMD: 'what is this?'
+[11:06:03] INFO - Semantic intent: 'scene' score=0.77
+[11:06:03] INFO - INTENT: scene
+[11:06:06] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:06] "POST /process HTTP/1.1" 200 -
+[11:06:07] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:07] "GET /memory HTTP/1.1" 200 -
+[11:06:15] INFO - CMD: 'how much?'
+[11:06:15] INFO - Semantic intent: 'currency' score=0.60
+[11:06:15] INFO - INTENT: currency
+[11:06:16] INFO - Running Gemini currency detection...
+[11:06:25] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:25] "POST /process HTTP/1.1" 200 -
+[11:06:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:26] "GET /memory HTTP/1.1" 200 -
+[11:06:32] INFO - CMD: 'how much?'
+[11:06:32] INFO - Semantic intent: 'currency' score=0.60
+[11:06:32] INFO - INTENT: currency
+[11:06:33] INFO - Running Gemini currency detection...
+[11:06:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:37] "POST /process HTTP/1.1" 200 -
+[11:06:38] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:38] "GET /memory HTTP/1.1" 200 -
+[11:06:43] INFO - CMD: 'how much?'
+[11:06:43] INFO - Semantic intent: 'currency' score=0.60
+[11:06:43] INFO - INTENT: currency
+[11:06:44] INFO - Running Gemini currency detection...
+[11:06:48] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:48] "POST /process HTTP/1.1" 200 -
+[11:06:49] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:49] "GET /memory HTTP/1.1" 200 -
+[11:06:54] INFO - CMD: 'h.'
+[11:06:54] INFO - Semantic intent: 'sleep' score=0.31
+[11:06:54] INFO - INTENT: unknown
+[11:06:54] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:54] "POST /process HTTP/1.1" 200 -
+[11:06:55] INFO - 127.0.0.1 - - [30/Mar/2026 11:06:55] "GET /memory HTTP/1.1" 200 -
+[11:07:04] INFO - CMD: 'how much?'
+[11:07:04] INFO - Semantic intent: 'currency' score=0.60
+[11:07:04] INFO - INTENT: currency
+[11:07:04] INFO - Running Gemini currency detection...
+[11:07:07] INFO - 127.0.0.1 - - [30/Mar/2026 11:07:07] "POST /process HTTP/1.1" 200 -
+[11:07:08] INFO - 127.0.0.1 - - [30/Mar/2026 11:07:08] "GET /memory HTTP/1.1" 200 -
+[11:07:14] INFO - CMD: 'how much?'
+[11:07:14] INFO - Semantic intent: 'currency' score=0.60
+[11:07:14] INFO - INTENT: currency
+[11:07:15] INFO - Running Gemini currency detection...
+[11:07:18] INFO - 127.0.0.1 - - [30/Mar/2026 11:07:18] "POST /process HTTP/1.1" 200 -
+[11:07:19] INFO - 127.0.0.1 - - [30/Mar/2026 11:07:19] "GET /memory HTTP/1.1" 200 -
+[11:07:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:07:37] "GET / HTTP/1.1" 200 -
+[11:08:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:08:26] "GET /faces HTTP/1.1" 200 -
+[11:08:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:08:27] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:08:58] INFO - CMD: 'who am i?'
+[11:08:59] INFO - Semantic intent: 'face' score=0.83
+[11:08:59] INFO - INTENT: face
+[11:09:16] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:16] "POST /process HTTP/1.1" 200 -
+[11:09:17] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:17] "GET /memory HTTP/1.1" 200 -
+[11:09:28] INFO - CMD: 'register face.'
+[11:09:28] INFO - Semantic intent: 'register' score=0.94
+[11:09:28] INFO - INTENT: register
+[11:09:29] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:29] "POST /process HTTP/1.1" 200 -
+[11:09:29] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:29] "GET /memory HTTP/1.1" 200 -
+[11:09:34] INFO - CMD: 'aisha.'
+[11:09:35] INFO - Semantic intent: 'face' score=0.30
+[11:09:35] INFO - INTENT: unknown
+[11:09:35] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:35] "POST /process HTTP/1.1" 200 -
+[11:09:35] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:35] "GET /faces HTTP/1.1" 200 -
+[11:09:35] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:35] "GET /memory HTTP/1.1" 200 -
+[11:09:43] INFO - CMD: 'what?'
+[11:09:43] INFO - Semantic intent: 'repeat' score=0.43
+[11:09:43] INFO - INTENT: repeat
+[11:09:43] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:43] "POST /process HTTP/1.1" 200 -
+[11:09:44] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:44] "GET /memory HTTP/1.1" 200 -
+[11:09:52] INFO - CMD: 'good morning.'
+[11:09:52] INFO - Semantic intent: 'briefing' score=0.94
+[11:09:52] INFO - INTENT: briefing
+[11:09:53] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:53] "POST /process HTTP/1.1" 200 -
+[11:09:53] INFO - 127.0.0.1 - - [30/Mar/2026 11:09:53] "GET /memory HTTP/1.1" 200 -
+[11:10:23] INFO - CMD: 'register fee.'
+[11:10:23] INFO - Semantic intent: 'register' score=0.43
+[11:10:23] INFO - INTENT: register
+[11:10:24] INFO - 127.0.0.1 - - [30/Mar/2026 11:10:24] "POST /process HTTP/1.1" 200 -
+[11:10:25] INFO - 127.0.0.1 - - [30/Mar/2026 11:10:25] "GET /memory HTTP/1.1" 200 -
+[11:10:50] INFO - 127.0.0.1 - - [30/Mar/2026 11:10:50] "GET / HTTP/1.1" 200 -
+[11:10:55] INFO - 127.0.0.1 - - [30/Mar/2026 11:10:55] "GET /faces HTTP/1.1" 200 -
+[11:10:56] INFO - 127.0.0.1 - - [30/Mar/2026 11:10:56] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:11:25] INFO - CMD: 'register face.'
+[11:11:25] INFO - Semantic intent: 'register' score=0.94
+[11:11:25] INFO - INTENT: register
+[11:11:25] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:25] "POST /process HTTP/1.1" 200 -
+[11:11:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:26] "GET /faces HTTP/1.1" 200 -
+[11:11:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:26] "GET /memory HTTP/1.1" 200 -
+[11:11:34] INFO - CMD: 'register face.'
+[11:11:34] INFO - Semantic intent: 'register' score=0.94
+[11:11:34] INFO - INTENT: register
+[11:11:35] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:35] "POST /process HTTP/1.1" 200 -
+[11:11:36] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:36] "GET /memory HTTP/1.1" 200 -
+[11:11:40] INFO - CMD: 'issue.'
+[11:11:40] INFO - Semantic intent: 'more' score=0.34
+[11:11:40] INFO - INTENT: more
+[11:11:40] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:40] "POST /process HTTP/1.1" 200 -
+[11:11:41] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:41] "GET /faces HTTP/1.1" 200 -
+[11:11:41] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:41] "GET /memory HTTP/1.1" 200 -
+[11:11:49] INFO - CMD: 'register fees.'
+[11:11:49] INFO - Semantic intent: 'register' score=0.41
+[11:11:49] INFO - INTENT: register
+[11:11:50] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:50] "POST /process HTTP/1.1" 200 -
+[11:11:51] INFO - 127.0.0.1 - - [30/Mar/2026 11:11:51] "GET /memory HTTP/1.1" 200 -
+[11:12:10] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:10] "GET / HTTP/1.1" 200 -
+[11:12:13] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:13] "GET /faces HTTP/1.1" 200 -
+[11:12:15] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:15] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:12:23] ERROR - Exception on /faces/Aisha. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:23] "[35m[1mDELETE /faces/Aisha. HTTP/1.1[0m" 500 -
+[11:12:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:23] "GET /faces HTTP/1.1" 200 -
+[11:12:24] ERROR - Exception on /faces/Aisha. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:24] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:24] "[35m[1mDELETE /faces/Aisha. HTTP/1.1[0m" 500 -
+[11:12:25] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:25] "GET /faces HTTP/1.1" 200 -
+[11:12:25] ERROR - Exception on /faces/Aisha. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:25] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:25] "[35m[1mDELETE /faces/Aisha. HTTP/1.1[0m" 500 -
+[11:12:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:26] "GET /faces HTTP/1.1" 200 -
+[11:12:26] ERROR - Exception on /faces/Aisha. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:26] "[35m[1mDELETE /faces/Aisha. HTTP/1.1[0m" 500 -
+[11:12:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:26] "GET /faces HTTP/1.1" 200 -
+[11:12:27] ERROR - Exception on /faces/Aisha. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:27] "[35m[1mDELETE /faces/Aisha. HTTP/1.1[0m" 500 -
+[11:12:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:27] "GET /faces HTTP/1.1" 200 -
+[11:12:29] ERROR - Exception on /faces/Aishu. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:29] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:29] "[35m[1mDELETE /faces/Aishu. HTTP/1.1[0m" 500 -
+[11:12:29] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:29] "GET /faces HTTP/1.1" 200 -
+[11:12:30] ERROR - Exception on /faces/Aishwarya. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:30] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:30] "[35m[1mDELETE /faces/Aishwarya. HTTP/1.1[0m" 500 -
+[11:12:30] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:30] "GET /faces HTTP/1.1" 200 -
+[11:12:32] ERROR - Exception on /faces/Issue. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:32] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:32] "[35m[1mDELETE /faces/Issue. HTTP/1.1[0m" 500 -
+[11:12:32] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:32] "GET /faces HTTP/1.1" 200 -
+[11:12:33] ERROR - Exception on /faces/Register_Face. [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: delete_face() got an unexpected keyword argument 'n'
+[11:12:33] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:33] "[35m[1mDELETE /faces/Register_Face. HTTP/1.1[0m" 500 -
+[11:12:33] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:33] "GET /faces HTTP/1.1" 200 -
+[11:12:43] INFO - CMD: 'registered face.'
+[11:12:43] INFO - Semantic intent: 'register' score=0.85
+[11:12:43] INFO - INTENT: register
+[11:12:43] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:43] "POST /process HTTP/1.1" 200 -
+[11:12:44] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:44] "GET /faces HTTP/1.1" 200 -
+[11:12:44] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:44] "GET /memory HTTP/1.1" 200 -
+[11:12:47] INFO - 127.0.0.1 - - [30/Mar/2026 11:12:47] "GET / HTTP/1.1" 200 -
+[11:12:59] INFO - ==================================================
+[11:12:59] INFO -   WARMING UP ALL MODELS...
+[11:12:59] INFO - ==================================================
+[11:12:59] INFO - Loading BLIP...
+[11:12:59] INFO - Loading sentence-transformers...
+[11:12:59] INFO - Loading COCO YOLO...
+[11:12:59] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.19.11:5000
+[11:12:59] INFO - [33mPress CTRL+C to quit[0m
+[11:13:00] INFO - COCO YOLO loaded OK
+[11:13:28] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[11:13:29] INFO - BLIP loaded OK
+[11:13:33] INFO - Intent model loaded OK
+[11:13:43] INFO - 127.0.0.1 - - [30/Mar/2026 11:13:43] "GET /faces HTTP/1.1" 200 -
+[11:13:45] INFO - 127.0.0.1 - - [30/Mar/2026 11:13:45] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:14:14] INFO - CMD: 'face.'
+[11:14:14] INFO - Semantic intent: 'face' score=0.54
+[11:14:14] INFO - INTENT: face
+[11:14:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:14:27] "POST /process HTTP/1.1" 200 -
+[11:14:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:14:27] "GET /memory HTTP/1.1" 200 -
+[11:14:38] INFO - CMD: 'register face.'
+[11:14:38] INFO - Semantic intent: 'register' score=0.94
+[11:14:38] INFO - INTENT: register
+[11:14:40] INFO - 127.0.0.1 - - [30/Mar/2026 11:14:40] "POST /process HTTP/1.1" 200 -
+[11:14:40] INFO - 127.0.0.1 - - [30/Mar/2026 11:14:40] "GET /memory HTTP/1.1" 200 -
+[11:14:58] INFO - 127.0.0.1 - - [30/Mar/2026 11:14:58] "GET / HTTP/1.1" 200 -
+[11:15:05] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:05] "GET /faces HTTP/1.1" 200 -
+[11:15:07] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:07] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:15:36] INFO - CMD: 'what objects?'
+[11:15:36] INFO - Semantic intent: 'objects' score=0.84
+[11:15:36] INFO - INTENT: objects
+[11:15:36] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:36] "POST /process HTTP/1.1" 200 -
+[11:15:36] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:36] "GET /faces HTTP/1.1" 200 -
+[11:15:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:37] "GET /memory HTTP/1.1" 200 -
+[11:15:45] INFO - CMD: 'what object?'
+[11:15:45] INFO - Semantic intent: 'objects' score=0.77
+[11:15:45] INFO - INTENT: objects
+[11:15:47] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:47] "POST /process HTTP/1.1" 200 -
+[11:15:48] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:48] "GET /memory HTTP/1.1" 200 -
+[11:15:54] INFO - CMD: 'what object?'
+[11:15:54] INFO - Semantic intent: 'objects' score=0.77
+[11:15:54] INFO - INTENT: objects
+[11:15:56] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:56] "POST /process HTTP/1.1" 200 -
+[11:15:57] INFO - 127.0.0.1 - - [30/Mar/2026 11:15:57] "GET /memory HTTP/1.1" 200 -
+[11:16:13] INFO - 127.0.0.1 - - [30/Mar/2026 11:16:13] "GET / HTTP/1.1" 200 -
+[11:16:15] INFO - 127.0.0.1 - - [30/Mar/2026 11:16:15] "GET /faces HTTP/1.1" 200 -
+[11:16:17] INFO - 127.0.0.1 - - [30/Mar/2026 11:16:17] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:16:47] INFO - CMD: 'checks.'
+[11:16:47] INFO - Semantic intent: 'scene' score=0.35
+[11:16:47] INFO - INTENT: scene
+[11:16:52] INFO - 127.0.0.1 - - [30/Mar/2026 11:16:52] "POST /process HTTP/1.1" 200 -
+[11:16:53] INFO - 127.0.0.1 - - [30/Mar/2026 11:16:53] "GET /memory HTTP/1.1" 200 -
+[11:17:01] INFO - CMD: 'what objects?'
+[11:17:01] INFO - Semantic intent: 'objects' score=0.84
+[11:17:01] INFO - INTENT: objects
+[11:17:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:02] "POST /process HTTP/1.1" 200 -
+[11:17:03] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:03] "GET /memory HTTP/1.1" 200 -
+[11:17:10] INFO - CMD: 'what objects?'
+[11:17:10] INFO - Semantic intent: 'objects' score=0.84
+[11:17:10] INFO - INTENT: objects
+[11:17:12] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:12] "POST /process HTTP/1.1" 200 -
+[11:17:13] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:13] "GET /memory HTTP/1.1" 200 -
+[11:17:17] INFO - CMD: 'objects.'
+[11:17:17] INFO - Semantic intent: 'objects' score=0.79
+[11:17:17] INFO - INTENT: objects
+[11:17:18] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:18] "POST /process HTTP/1.1" 200 -
+[11:17:19] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:19] "GET /memory HTTP/1.1" 200 -
+[11:17:25] INFO - CMD: 'what objects?'
+[11:17:25] INFO - Semantic intent: 'objects' score=0.84
+[11:17:25] INFO - INTENT: objects
+[11:17:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:26] "POST /process HTTP/1.1" 200 -
+[11:17:27] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:27] "GET /memory HTTP/1.1" 200 -
+[11:17:36] INFO - CMD: 'what objects?'
+[11:17:36] INFO - Semantic intent: 'objects' score=0.84
+[11:17:36] INFO - INTENT: objects
+[11:17:38] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:38] "POST /process HTTP/1.1" 200 -
+[11:17:39] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:39] "GET /memory HTTP/1.1" 200 -
+[11:17:46] INFO - CMD: 'what object?'
+[11:17:46] INFO - Semantic intent: 'objects' score=0.77
+[11:17:46] INFO - INTENT: objects
+[11:17:47] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:47] "POST /process HTTP/1.1" 200 -
+[11:17:48] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:48] "GET /memory HTTP/1.1" 200 -
+[11:17:56] INFO - CMD: 'who am i?'
+[11:17:56] INFO - Semantic intent: 'face' score=0.83
+[11:17:56] INFO - INTENT: face
+[11:17:59] INFO - 127.0.0.1 - - [30/Mar/2026 11:17:59] "POST /process HTTP/1.1" 200 -
+[11:18:00] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:00] "GET /memory HTTP/1.1" 200 -
+[11:18:12] INFO - CMD: 'who am i?'
+[11:18:12] INFO - Semantic intent: 'face' score=0.83
+[11:18:12] INFO - INTENT: face
+[11:18:14] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:14] "POST /process HTTP/1.1" 200 -
+[11:18:15] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:15] "GET /memory HTTP/1.1" 200 -
+[11:18:26] INFO - CMD: 'who am i?'
+[11:18:26] INFO - Semantic intent: 'face' score=0.83
+[11:18:26] INFO - INTENT: face
+[11:18:28] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:28] "POST /process HTTP/1.1" 200 -
+[11:18:29] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:29] "GET /memory HTTP/1.1" 200 -
+[11:18:40] INFO - CMD: 'who am i?'
+[11:18:40] INFO - Semantic intent: 'face' score=0.83
+[11:18:40] INFO - INTENT: face
+[11:18:42] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:42] "POST /process HTTP/1.1" 200 -
+[11:18:43] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:43] "GET /memory HTTP/1.1" 200 -
+[11:18:54] INFO - CMD: 'who am i?'
+[11:18:54] INFO - Semantic intent: 'face' score=0.83
+[11:18:54] INFO - INTENT: face
+[11:18:57] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:57] "POST /process HTTP/1.1" 200 -
+[11:18:58] INFO - 127.0.0.1 - - [30/Mar/2026 11:18:58] "GET /memory HTTP/1.1" 200 -
+[11:19:09] INFO - CMD: 'who am i?'
+[11:19:10] INFO - Semantic intent: 'face' score=0.83
+[11:19:10] INFO - INTENT: face
+[11:19:12] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:12] "POST /process HTTP/1.1" 200 -
+[11:19:13] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:13] "GET /memory HTTP/1.1" 200 -
+[11:19:23] INFO - CMD: 'n.'
+[11:19:23] INFO - Semantic intent: 'briefing' score=0.33
+[11:19:23] INFO - INTENT: briefing
+[11:19:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:23] "POST /process HTTP/1.1" 200 -
+[11:19:24] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:24] "GET /memory HTTP/1.1" 200 -
+[11:19:51] INFO - CMD: 'am.'
+[11:19:51] INFO - Semantic intent: 'briefing' score=0.42
+[11:19:51] INFO - INTENT: briefing
+[11:19:51] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:51] "POST /process HTTP/1.1" 200 -
+[11:19:52] INFO - 127.0.0.1 - - [30/Mar/2026 11:19:52] "GET /memory HTTP/1.1" 200 -
+[11:20:26] INFO - 127.0.0.1 - - [30/Mar/2026 11:20:26] "GET / HTTP/1.1" 200 -
+[11:20:31] INFO - 127.0.0.1 - - [30/Mar/2026 11:20:31] "GET /faces HTTP/1.1" 200 -
+[11:20:33] INFO - 127.0.0.1 - - [30/Mar/2026 11:20:33] "GET /startup_info HTTP/1.1" 200 -
+[11:20:48] INFO - CMD: 'who am i?'
+[11:20:48] INFO - Semantic intent: 'face' score=0.83
+[11:20:48] INFO - INTENT: face
+[11:20:52] INFO - 127.0.0.1 - - [30/Mar/2026 11:20:52] "POST /process HTTP/1.1" 200 -
+[11:20:53] INFO - 127.0.0.1 - - [30/Mar/2026 11:20:53] "GET /memory HTTP/1.1" 200 -
+[11:21:03] INFO - CMD: 'register fees.'
+[11:21:03] INFO - Semantic intent: 'register' score=0.41
+[11:21:03] INFO - INTENT: register
+[11:21:05] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:05] "POST /process HTTP/1.1" 200 -
+[11:21:06] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:06] "GET /memory HTTP/1.1" 200 -
+[11:21:11] INFO - CMD: 'ishu.'
+[11:21:11] INFO - Semantic intent: 'location' score=0.26
+[11:21:11] INFO - INTENT: unknown
+[11:21:11] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:11] "POST /process HTTP/1.1" 200 -
+[11:21:12] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:12] "GET /faces HTTP/1.1" 200 -
+[11:21:12] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:12] "GET /memory HTTP/1.1" 200 -
+[11:21:19] INFO - CMD: 'who am i?'
+[11:21:19] INFO - Semantic intent: 'face' score=0.83
+[11:21:19] INFO - INTENT: face
+[11:21:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:23] "POST /process HTTP/1.1" 200 -
+[11:21:24] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:24] "GET /memory HTTP/1.1" 200 -
+[11:21:34] INFO - CMD: 'i.'
+[11:21:34] INFO - Semantic intent: 'more' score=0.33
+[11:21:34] INFO - INTENT: more
+[11:21:38] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:38] "POST /process HTTP/1.1" 200 -
+[11:21:39] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:39] "GET /memory HTTP/1.1" 200 -
+[11:21:46] INFO - CMD: 'bad am i?'
+[11:21:46] INFO - Semantic intent: 'location' score=0.33
+[11:21:46] INFO - INTENT: location
+[11:21:48] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:48] "POST /process HTTP/1.1" 200 -
+[11:21:49] INFO - 127.0.0.1 - - [30/Mar/2026 11:21:49] "GET /memory HTTP/1.1" 200 -
+[11:22:06] INFO - CMD: 'where am i?'
+[11:22:06] INFO - Semantic intent: 'location' score=0.88
+[11:22:06] INFO - INTENT: location
+[11:22:07] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:07] "POST /process HTTP/1.1" 200 -
+[11:22:08] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:08] "GET /memory HTTP/1.1" 200 -
+[11:22:23] INFO - CMD: 'colour.'
+[11:22:23] INFO - Semantic intent: 'color' score=0.79
+[11:22:23] INFO - INTENT: color
+[11:22:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:23] "POST /process HTTP/1.1" 200 -
+[11:22:24] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:24] "GET /memory HTTP/1.1" 200 -
+[11:22:30] INFO - CMD: 'what colour?'
+[11:22:30] INFO - Semantic intent: 'color' score=0.90
+[11:22:30] INFO - INTENT: color
+[11:22:30] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:30] "POST /process HTTP/1.1" 200 -
+[11:22:31] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:31] "GET /memory HTTP/1.1" 200 -
+[11:22:37] INFO - CMD: 'how far?'
+[11:22:37] INFO - Semantic intent: 'distance' score=0.83
+[11:22:37] INFO - INTENT: distance
+[11:22:38] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:38] "POST /process HTTP/1.1" 200 -
+[11:22:39] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:39] "GET /memory HTTP/1.1" 200 -
+[11:22:49] INFO - CMD: 'how far?'
+[11:22:49] INFO - Semantic intent: 'distance' score=0.83
+[11:22:49] INFO - INTENT: distance
+[11:22:51] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:51] "POST /process HTTP/1.1" 200 -
+[11:22:52] INFO - 127.0.0.1 - - [30/Mar/2026 11:22:52] "GET /memory HTTP/1.1" 200 -
+[11:23:02] INFO - CMD: 'what time is it?'
+[11:23:02] INFO - Semantic intent: 'time' score=0.92
+[11:23:02] INFO - INTENT: time
+[11:23:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:02] "POST /process HTTP/1.1" 200 -
+[11:23:03] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:03] "GET /memory HTTP/1.1" 200 -
+[11:23:10] INFO - CMD: 'what day?'
+[11:23:10] INFO - Semantic intent: 'date' score=0.80
+[11:23:10] INFO - INTENT: date
+[11:23:10] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:10] "POST /process HTTP/1.1" 200 -
+[11:23:11] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:11] "GET /memory HTTP/1.1" 200 -
+[11:23:20] INFO - CMD: 'back am i?'
+[11:23:20] INFO - Semantic intent: 'location' score=0.48
+[11:23:20] INFO - INTENT: location
+[11:23:20] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:20] "POST /process HTTP/1.1" 200 -
+[11:23:21] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:21] "GET /memory HTTP/1.1" 200 -
+[11:23:36] INFO - CMD: 'the weather.'
+[11:23:36] INFO - Semantic intent: 'weather' score=0.77
+[11:23:36] INFO - INTENT: weather
+[11:23:36] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:36] "POST /process HTTP/1.1" 200 -
+[11:23:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:37] "GET /memory HTTP/1.1" 200 -
+[11:23:55] INFO - CMD: 'speak fast.'
+[11:23:55] INFO - Semantic intent: 'faster' score=0.87
+[11:23:55] INFO - INTENT: faster
+[11:23:55] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:55] "POST /process HTTP/1.1" 200 -
+[11:23:56] INFO - 127.0.0.1 - - [30/Mar/2026 11:23:56] "GET /memory HTTP/1.1" 200 -
+[11:24:00] INFO - CMD: 'what weather?'
+[11:24:00] INFO - Semantic intent: 'weather' score=0.79
+[11:24:00] INFO - INTENT: weather
+[11:24:01] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:01] "POST /process HTTP/1.1" 200 -
+[11:24:02] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:02] "GET /memory HTTP/1.1" 200 -
+[11:24:18] INFO - CMD: 'what is this?'
+[11:24:18] INFO - Semantic intent: 'scene' score=0.77
+[11:24:18] INFO - INTENT: scene
+[11:24:21] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:21] "POST /process HTTP/1.1" 200 -
+[11:24:22] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:22] "GET /memory HTTP/1.1" 200 -
+[11:24:31] INFO - CMD: 'again.'
+[11:24:31] INFO - Semantic intent: 'repeat' score=0.82
+[11:24:31] INFO - INTENT: repeat
+[11:24:31] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:31] "POST /process HTTP/1.1" 200 -
+[11:24:32] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:32] "GET /memory HTTP/1.1" 200 -
+[11:24:40] INFO - CMD: 'speak slower.'
+[11:24:40] INFO - Semantic intent: 'slower' score=0.97
+[11:24:40] INFO - INTENT: slower
+[11:24:40] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:40] "POST /process HTTP/1.1" 200 -
+[11:24:41] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:41] "GET /memory HTTP/1.1" 200 -
+[11:24:47] INFO - CMD: 'read this.'
+[11:24:47] INFO - Semantic intent: 'ocr' score=0.87
+[11:24:47] INFO - INTENT: ocr
+[11:24:48] INFO - Running Gemini OCR...
+[11:24:51] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:51] "POST /process HTTP/1.1" 200 -
+[11:24:52] INFO - 127.0.0.1 - - [30/Mar/2026 11:24:52] "GET /memory HTTP/1.1" 200 -
+[11:25:47] INFO - 127.0.0.1 - - [30/Mar/2026 11:25:47] "GET / HTTP/1.1" 200 -
+[11:25:50] INFO - 127.0.0.1 - - [30/Mar/2026 11:25:50] "GET /faces HTTP/1.1" 200 -
+[11:25:51] INFO - 127.0.0.1 - - [30/Mar/2026 11:25:51] "GET /startup_info?lat=12.92148&lon=80.240059 HTTP/1.1" 200 -
+[11:26:20] INFO - CMD: 'where is the light?'
+[11:26:21] INFO - Semantic intent: 'light' score=0.85
+[11:26:21] INFO - INTENT: light
+[11:26:22] INFO - 127.0.0.1 - - [30/Mar/2026 11:26:22] "POST /process HTTP/1.1" 200 -
+[11:26:23] INFO - 127.0.0.1 - - [30/Mar/2026 11:26:23] "GET /memory HTTP/1.1" 200 -
+[11:26:31] INFO - CMD: 'thank you.'
+[11:26:31] INFO - Semantic intent: 'briefing' score=0.38
+[11:26:31] INFO - INTENT: briefing
+[11:26:31] INFO - 127.0.0.1 - - [30/Mar/2026 11:26:31] "POST /process HTTP/1.1" 200 -
+[11:26:32] INFO - 127.0.0.1 - - [30/Mar/2026 11:26:32] "GET /memory HTTP/1.1" 200 -
+[11:27:08] INFO - 127.0.0.1 - - [30/Mar/2026 11:27:08] "GET / HTTP/1.1" 200 -
+[11:29:08] INFO - 127.0.0.1 - - [30/Mar/2026 11:29:08] "GET /faces HTTP/1.1" 200 -
+[11:29:09] INFO - 127.0.0.1 - - [30/Mar/2026 11:29:09] "GET /startup_info?lat=12.921484&lon=80.240059 HTTP/1.1" 200 -
+[11:29:15] INFO - 127.0.0.1 - - [30/Mar/2026 11:29:15] "GET / HTTP/1.1" 200 -
+[11:29:21] INFO - 127.0.0.1 - - [30/Mar/2026 11:29:21] "GET / HTTP/1.1" 200 -
+[11:29:33] INFO - ==================================================
+[11:29:33] INFO -   WARMING UP ALL MODELS...
+[11:29:33] INFO - ==================================================
+[11:29:33] INFO - Loading BLIP...
+[11:29:33] INFO - Loading sentence-transformers...
+[11:29:33] INFO - Loading COCO YOLO...
+[11:29:33] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.19.11:5000
+[11:29:33] INFO - [33mPress CTRL+C to quit[0m
+[11:29:33] INFO - COCO YOLO loaded OK
+[11:29:37] INFO - 127.0.0.1 - - [30/Mar/2026 11:29:37] "GET / HTTP/1.1" 200 -
+[11:30:17] WARNING - From C:\Users\Ishwarya\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[11:30:17] INFO - BLIP loaded OK
+[11:30:23] INFO - Intent model loaded OK
